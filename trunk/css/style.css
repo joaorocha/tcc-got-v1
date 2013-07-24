@@ -1,4 +1,4 @@
-@CHARSET "ISO-8859-1";
+﻿@CHARSET "ISO-8859-1";
 
 *{
 	margin: 0;
@@ -8,68 +8,78 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	background-image: url('../img/bg0.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-color: #000000;
 }
 
-/*Cabeçalho*/
 header{
 	margin: 0;
 	padding: 0;
+	min-width: 1450px;
 	width: 100%;
 	height: auto;
 	position: fixed;
 	z-index: 990;
-	opacity: 1;
-	background-color: #2d2d2d;
-	border: 1px solid #000;
+	background: url('../img/header-overlay.png') 50% 100% repeat-x;
+	background-color: transparent;
 	font-size: 18px;
 	color: #CCCCCC;
 }
 
 /*Logo do cabeçalho*/
 #logo{
-	margin-left: 5%;
-	margin-right: 3%;
-	padding: 0;
 	float: left;
 	position: relative;
 	top: 3px;
+	margin-left: 5%; 
 }
 
 /*Menu do cabeçalho*/
 .menu{
   list-style-type: none;
   float: left;
+  margin-left: 2%;
+}
+
+.menu li#item1{
+	background: none;
 }
 
 	.menu li{
-	  position: relative;
-	  float: left;
+		position: relative;
+		float: left;
+		background-image: url('../img/divider.png');
+		background-repeat: repeat-y;
 	}
 
 		.menu li a{
 		  color: #FFF;
 		  text-decoration: none;
-		  padding: 5px 25px;
+		  font-weight: bold;
+		  padding: 6px 15px;
+		  margin: 0px 10px;
 		  display: block;
+		  text-shadow: -1px -1px 1px rgba(0,0,0,0.4);
 		}
 
 		.menu li a:hover{
-		  background:#2d2d2d;
-		  color:#fff;
+		  background: -moz-linear-gradient(top, #000 0%, #2d2d2d 50%, #000 51%, #2D6FBE 100%);
+		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(50%,#2d2d2d), color-stop(51%,#2d2d2d), color-stop(100%,#000));
+		  opacity: 0.8;
+		  z-index: 1;
+		  border-radius: 5px;
 		  text-shadow:0px 0px 5px #fff;
 		}
 
 		.menu li ul{
 		  position: absolute;
-		  top: 32px;
-		  left: 1px;
-		  background-color: #FFF;
+		  top: 34px;
+		  left: -5px;
 		  display: none;
+		  padding: 0px;
 		}
 
 			.menu li:hover ul, .menu li.over ul{
@@ -78,10 +88,13 @@ header{
 
 			.menu li ul li{
 				font-size: 13px;
-				background-color: #2d2d2d;
 			  	display: block;
+			  	padding: 1px 0px;
+			  	margin: 0px 15px;
 			  	width: 250px;
-			  	border-bottom: 2px solid #FFF;
+				background: url('../img/header-overlay.png') 50% 100% repeat-x;
+				background-color: transparent;
+				border-radius: 5px;
 			}
 
 /*Botão de log with facebook*/
@@ -94,8 +107,9 @@ header{
 /*Botões de redes sociais*/
 #redesSociais{
 	float: left;
-	margin-left: 10%;
+	margin-left: 5%;
 }
+
 
 /*Conteúdo completo central*/
 #tudo{
