@@ -1,6 +1,4 @@
-﻿@CHARSET "ISO-8859-1";
-
-*{
+﻿*{
 	margin: 0;
 	padding: 0;
 }
@@ -21,7 +19,8 @@ header{
 	min-width: 1450px;
 	width: 100%;
 	height: auto;
-	position: fixed;
+	position: relative;
+	float: left;
 	z-index: 990;
 	background: url('../img/header-overlay.png') 50% 100% repeat-x;
 	background-color: transparent;
@@ -44,7 +43,7 @@ header{
   margin-left: 2%;
 }
 
-.menu li#item1{
+.menu li.item1{
 	background: none;
 }
 
@@ -110,57 +109,66 @@ header{
 	margin-left: 5%;
 }
 
+#redesSociais a:hover{
+}
 
-/*Conteúdo completo central*/
-#tudo{
+#todo{
+	min-width: 850px;
+	width: 100px;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	width: 65%;
 	position: relative;
-	top: 42px;
+	top: 34px;
 	text-align: center;
 }
 
-/*Banner do home*/
 #banner{
-	z-index: 3;
+
 }
 
-/*Menu superior abaixo do banner do home*/
 .menu_sup{
+	background: url('../img/header-overlay.png') 50% 100% repeat-x;
+	background-color: transparent;
 	margin: 0;
 	padding: 0;
 	position: relative;
-	width: 100%;
+	min-width: 850px;
+	width: 850px;
 	height: auto;
-	background-color: #2d2d2d;
 	text-align: left;
 	list-style-type: none;
 	float: left;
-	border: 1px solid #000;
+	border-radius: 4px;
 }
 
 	.menu_sup li{
 		position: relative;
 		float: left;
+		background-image: url('../img/divider.png');
+		background-repeat: repeat-y;
 	}
 
 		.menu_sup li a{
 			color: #FFF;
 			text-decoration: none;
-			padding: 5px 37px;
+			padding: 3px 22px;
+			margin: 1px 10px;
 			display: block;
+			font-weight: bold;
 		}
 
 		.menu_sup li a:hover{
-			background: #2d2d2d;
-			color: #FFF;
-			text-shadow: 0 0 5px #fff;
+		  background: -moz-linear-gradient(top, #000 0%, #2d2d2d 50%, #000 51%, #2D6FBE 100%);
+		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(50%,#2d2d2d), color-stop(51%,#2d2d2d), color-stop(100%,#000));
+		  opacity: 0.8;
+		  z-index: 1;
+		  border-radius: 4px;
+		  text-shadow:0px 0px 5px #fff;
 		}
 
 		.menu_sup li ul{
 			position: absolute;
-			background-color: #2d2d2d;
 			display: none;
 			float: left;
 			list-style-type: none;
@@ -173,56 +181,84 @@ header{
 
 			.menu_sup li ul li{
 				font-size: 13px;
-				background-color: #2d2d2d;
 			  	display: block;
+			  	padding: 1px 0px;
+			  	margin: 0px 0px;
 			  	width: 150px;
-			  	text-align: left;
-			  	border-left: 15px solid #FFF;
-			  	border-bottom: 2px solid #FFF;
-			  	padding: 0px 5px; !important
+				background: url('../img/header-overlay.png') 50% 100% repeat-x;
+				background-color: transparent;
+				border-radius: 5px;
 			}
 
-/*Menu lateral*/
+#sub_menu1 li{
+	margin: 0px 0px;
+	padding: 0px 0px;
+	text-align: left;
+}
+
+.menu_sup li.item1{
+	background: none;
+}
+
+
 #menu_lateral{
-	margin-top: 5%;
+	margin-top: 4%;
 }
 
 /*Lista do menu lateral*/
 .menu_lat{
+	background: url('../img/header-overlay.png') repeat-x;
+	background-size: 100%;
+	background-color: transparent;
 	margin: 0;
 	padding: 0;
-	float: left;
 	position: relative;
+	min-width: 200px;
+	width: 23%;
+	height: auto;
 	text-align: left;
 	list-style-type: none;
-	background-color: #2d2d2d;
-	width: 23%;
-	border: 1px solid #000;
+	float: left;
+	border-radius: 4px;
 }
-
-	.menu_lat li{
-		position: relative;
-	}
 
 	.menu_lat li a{
 		color: #FFF;
 		text-decoration: none;
+		text-align: left;
 		padding: 5px 10px;
+		margin: 0px 0px;
 		display: block;
+		font-weight: bold;
 	}
 
 	.menu_lat li a:hover{
-		background: #2d2d2d;
-		color: #FFF;
-		text-shadow: 0 0 5px #fff;
+		background: -moz-linear-gradient(top, #000 0%, #2d2d2d 50%, #000 51%, #2D6FBE 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(50%,#2d2d2d), color-stop(51%,#2d2d2d), color-stop(100%,#000));
+		opacity: 0.8;
+		z-index: 1;
+		border-radius: 4px;
+		text-shadow: 0px 0px 5px #fff;
 	}
 
-		.menu_lat li {
-			font-size: 14px;
-		  	display: block;
-		  	text-align: left;
-		  	border-bottom: 1px solid #FFF;
-			}
+	.menu_lat li{
+		text-align: left;
+		display: block;
+		position: relative;
+		float: left;
+		background-image: url('../img/dividerh.png');
+		width: 100%;
+		background-repeat: repeat-x;
+	}
+
+	.menu_lat li.item1{
+	background: none;
+}
+
+.menu_lat li img{
+	margin: 0px;
+	text-align: center;
+}
 
 /*Conteúdo central principal*/
 #centro{
@@ -230,16 +266,19 @@ header{
 	padding: 0;
 	position: relative;
 	float: left;
-	width: 75%;
+	min-width: 645px;
+	width: 645px;
 	height: auto;
-	margin-left: 1.54%;
-	background-color: #2d2d2d;
-	border: 1px solid #000;
+	margin-left: 5px;
+	background: url('../img/header-overlay.png') repeat-x;
+	background-size: 100%;
+	background-color: transparent;
+	border-radius: 4px;
 }
 
 /*Carousel de notícias*/
 .html_carousel {
-    padding: 10px 0 15px 15px;
+    padding: 10px 12px;
 }
 
 	.html_carousel div.slide {
@@ -248,7 +287,7 @@ header{
 
 		.html_carousel div.slide div {
 		    background-color: rgba(0, 0, 0, 0.6);
-		    width: 630px;
+		    width: 620px;
 		    display: none;
 		    position: absolute;
 		    bottom: 0;
@@ -277,17 +316,18 @@ header{
 /*Campo de notícias da parte inferior ao carousel*/
 #campo_noticias{
 	margin: 0px;
-	border: 1px solid #000;
+	border: 1px solid #fff;
 }
 
 .noticias{
-	border-bottom: 1px solid #000;
-	width: 650px;
+	border-bottom: 1px solid #fff;
+	width: 630px;
 	height: 120px;
 	float: left;
 	position: relative;
+	color: #fff;
 	margin: 0;
-	padding: 0px 4px;
+	padding: 0px 7px;
 }
 
 	.noticias a{
@@ -324,6 +364,7 @@ header{
 		position: absolute;
 		left: 165px;
 		top: 40px;
+		margin: 0px 3px;
 	}
 
 #readmore{
@@ -331,6 +372,7 @@ header{
 	position: absolute;
 	top: 90px;
 	left: 165px;
+	margin: 0px 3px;
 }
 
 #data{
@@ -340,17 +382,17 @@ header{
 	font-size: 11px;
 }
 
-/*Rodapé*/
 footer{
 	margin: 0;
 	padding: 0;
 	font-size: 11px;
 	position: relative;
 	float: left;
-	width: 100%;
+	width: 850px;
 	height: auto;
+	color: #fff;
 	text-align: center;
-	background-color: #2d2d2d;
-	border: 1px solid #000;
+	background: url('../img/header-overlay.png') repeat-x;
+	background-size: 100%;
 	margin-top: 4%;
 }
