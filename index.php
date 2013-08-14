@@ -2,7 +2,7 @@
 
 include_once "template.php";
 
-$middle = '<div id="centro">
+$content = '<div id="centro">
     <!--CAROUSEL-->
     <div class="html_carousel">
         <div id="foo3">
@@ -10,29 +10,29 @@ $middle = '<div id="centro">
             <div class="slide">
                 <img src="img/image_1.jpg" alt="carousel 1" width="620" height="355" />
                 <div>
-                    <h4>Infinity</h4>
-                    <p>A concept that in many fields refers to a quantity without bound or end.</p>
+                    <h4>VAI</h4>
+                    <p>huhehuehuehuhuehueheu</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="img/image_2.jpg" alt="carousel 2" width="620" height="355" />
                 <div>
-                    <h4>Circular journey</h4>
-                    <p>An excursion in which the final destination is the same as the starting point.</p>
+                    <h4>SE</h4>
+                    <p>huhehuehuehuhuehueheu</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="img/image_3.jpg" alt="carousel 3" width="620" height="355" />
                 <div>
-                    <h4>jQuery</h4>
-                    <p>jQuery is a JavaScript library designed to simplify the client-side scripting.</p>
+                    <h4>FUDER</h4>
+                    <p>huhehuehuehuhuehueheu</p>
                 </div>
             </div>
             <div class="slide">
                 <img src="img/image_4.jpg" alt="carousel 4" width="620" height="355" />
                    <div>
-                    <h4>Carousel</h4>
-                    <p>A carousel is an amusement ride consisting of a rotating circular platform with seats.</p>
+                    <h4>VADIA</h4>
+                    <p>huhehuehuehuhuehueheu</p>
                    </div>
                </div>
             </div>
@@ -72,6 +72,7 @@ $middle = '<div id="centro">
 </div>';
 
 echo $top;
-echo $middle;
+echo $content;
 echo $bottom;
+
 ?>
