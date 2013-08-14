@@ -135,4 +135,12 @@ $bottom = '<footer>
         </footer></div>
 </body>
 </html>';
+
+
+// // Inclua o seguinte codigo nas paginas:
+// include_once "template.php";
+// $content = "<html></html>";
+// echo $top;
+// echo $content;
+// echo $bottom;
 ?>
