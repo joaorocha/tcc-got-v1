@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 // Conexão com o banco
 $server = "127.0.0.1";
 $db = "GOT";
@@ -17,7 +18,7 @@ $dados_usuario = array(
 
 $criar_usuario = $dbcon->prepare('INSERT INTO usuario VALUES (:nome, :login, :passwd, :status, :tipo');
 $criar_usuario->execute($dados_usuario);
-echo "<h1>Usuario '{$dados_usuario[:login]}' cadastrado!</h1>"
+echo "<html><body><h1>Usuario '{$dados_usuario[:login]}' cadastrado!</h1></body></html>"
 
 // Fecha conexão com o banco
 $dbcon = null;
