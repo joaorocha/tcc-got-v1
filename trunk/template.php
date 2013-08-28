@@ -45,15 +45,15 @@ $top = '<!DOCTYPE html>
     <header>
         <nav class="navHeader">
             <div id="logo">
-                <a href="#DWG"><img src="img/logodw.png" width="150" height="30"></a>
+                <a href="#"><img src="img/logodw.png" width="150" height="30"></a>
             </div>
             <ul class="menu">
-                <li class="item1"><a href="#http://www.darkwingsgames.com.br/jogos">Jogos</a>
+                <li class="item1"><a href="#">Jogos</a>
                     <ul id="sub_menu">
-                        <li><a href="#http://www.gotgame.com.br">Game Of Thrones-The Game</a></li>
-                        <li><a href="#http://www.cptcleavegame.com.br">The Adventures of Cpt. Cleave</a></li>
-                        <li><a href="#http://www.nightmaregame.com.br">Nightmare</a></li>
-                        <li><a href="#http://www.darkwingsgames.com.br/mobilegames">Mobile Games</a></li>   
+                        <li><a href="#">Game Of Thrones-The Game</a></li>
+                        <li><a href="#">The Adventures of Cpt. Cleave</a></li>
+                        <li><a href="#">Nightmare</a></li>
+                        <li><a href="#">Mobile Games</a></li>   
                     </ul>
                 </li>   
                 <li><a href="#http://www.darkwingsgames.com.br/contato">Contato</a></li>
@@ -62,11 +62,11 @@ $top = '<!DOCTYPE html>
                 <li><a href="#http://www.darkwingsgames.com.br/servicos">Outros serviços</a></li>
             </ul>
             <div id="logWith">
-                <a href="#logWithDWG"><img src="img/logWith.png" width="154" height="22"></a>
+                <a href="#"><img src="img/logWith.png" width="154" height="22"></a>
             </div>
             <div id="redesSociais">
                 <a href="https://www.facebook.com/darkwingsgames"><img src="img/Cracked-Facebook-Logo.png" width="30" height="30"></a>
-                <a href="#TwitterDWG"><img src="img/twitter-logo-break.png" width="30" height="30"></a>
+                <a href="#"><img src="img/twitter-logo-break.png" width="30" height="30"></a>
             </div>
         </nav>
     </header>
@@ -74,37 +74,37 @@ $top = '<!DOCTYPE html>
     <div id="todo">
         <!--BANNER-->
         <div id="banner">
-            <a href="#http://www.gotgame.com.br"><img src="img/bannergot2.png" width="900" height="178"></a>
+            <a href="#"><img src="img/bannergot2.png" width="900" height="178"></a>
         </div>
         <!--MENU SUPERIOR-->
         <div id="menu_superior">
             <nav>
                 <ul class="menu_sup">
-                    <li class="item1"><a href="#http://www.gotgame.com.br">Início</a></li>
-                    <li><a href="#http://www.gotgame.com.br/news">Notícias</a>
+                    <li class="item1"><a href="#">Início</a></li>
+                    <li><a href="#">Notícias</a>
                         <ul id="sub_menu1">
-                            <li><a href="#http://www.gotgame.com.br/news/eventos">Eventos</a></li>
-                            <li><a href="#http://www.gotgame.com.br/news/updates">Updates</a></li>
-                            <li><a href="#http://www.gotgame.com.br/news">Geral</a></li>
+                            <li><a href="#">Eventos</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Geral</a></li>
                         </ul>
                     </li>
-                    <li><a href="#http://www.gotgame.com.br/guias">Guias</a>
+                    <li><a href="#">Guias</a>
                         <ul>
-                            <li><a href="#http://www.gotgame.com.br/guias/basico">Básico</a></li>
-                            <li><a href="#http://www.gotgame.com.br/guias/intermediario">Intermediário</a></li>
-                            <li><a href="#http://www.gotgame.com.br/guias/avancado">Avançado</a></li>
+                            <li><a href="#">Básico</a></li>
+                            <li><a href="#">Intermediário</a></li>
+                            <li><a href="#">Avançado</a></li>
                         </ul>
                     </li>
-                    <li><a href="#http://www.forumgotgame.com.br">Fórum</a></li>
-                    <li><a href="#http://www.gotgame.com.br/cadastro">Cadastro</a></li>
-                    <li><a href="#http://www.gotgame.com.br/ranking">Ranking</a>
+                    <li><a href="#">Fórum</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="#">Ranking</a>
                         <ul>
-                            <li><a href="#http://www.gotgame.com.br/ranking/geral">Geral</a></li>
-                            <li><a href="#http://www.gotgame.com.br/ranking/casas">Casas</a></li>
-                            <li><a href="#http://www.gotgame.com.br/ranking/riqueza">Riqueza</a></li>
+                            <li><a href="#">Geral</a></li>
+                            <li><a href="#">Casas</a></li>
+                            <li><a href="#">Riqueza</a></li>
                         </ul>
                     </li>
-                    <li><a href="#http://www.gotgame.com.br/suporte">Suporte</a></li>
+                    <li><a href="#">Suporte</a></li>
                 </ul>
             </nav>
         </div>
@@ -113,17 +113,17 @@ $top = '<!DOCTYPE html>
             <nav>
                 <ul class="menu_lat">
                     <li class="item1"><img src="img/principal1.png" width="200" height="90"></li>
-                    <li><a href="#http://www.gotgame.com.br/historia">História</a></li>
-                    <li><a href="#http://www.gotgame.com.br/buy">Compre Créditos</a></li>
-                    <li><a href="#http://www.gotgame.com.br/wallpapers">Papéis de parede</a></li>
-                    <li><a href="#http://www.gotgame.com.br/about">Sobre GoT</a></li>
-                    <li><a href="#http://www.gotgame.com.br/contato">Entre em Contato</a></li>
+                    <li><a href="#">História</a></li>
+                    <li><a href="#">Compre Créditos</a></li>
+                    <li><a href="#">Papéis de parede</a></li>
+                    <li><a href="#">Sobre GoT</a></li>
+                    <li><a href="#">Entre em Contato</a></li>
                     <li><img src="img/usrpanel.png" width="200" height="90"></li>
-                    <li><a href="#http://www.gotgame.com.br/user">Dados da conta</a></li>
-                    <li><a href="#http://www.gotgame.com.br/market">Mercado</a></li>
-                    <li><a href="#http://www.gotgame.com.br/quests">Missões</a></li>
-                    <li><a href="#http://www.gotgame.com.br/chat">Chat</a></li>
-                    <li><a href="#http://www.gotgame.com.br/pvp">P.v.P</a></li>
+                    <li><a href="#">Dados da conta</a></li>
+                    <li><a href="#">Mercado</a></li>
+                    <li><a href="#">Missões</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">P.v.P</a></li>
                 </ul>
             </nav>
         </div>';
@@ -131,7 +131,7 @@ $top = '<!DOCTYPE html>
 $bottom = '<footer>
         Jogo e sistemas © CopyRight 2013 by www.gotgame.com - Todos os direitos reservados.<br>
         Personagens, livros e séries © CopyRight 1996 by HBO George R. R. Martin - Todos os direitos reservados.<br>
-        Powered by BSG: <br> <a href="#http://www.darkwingsgames.com.br/"><img src="img/minilogo.png"></a>
+        Powered by BSG: <br> <a href="#"><img src="img/minilogo.png"></a>
         </footer></div>
 </body>
 </html>';
@@ -139,7 +139,8 @@ $bottom = '<footer>
 
 // // Inclua o seguinte codigo nas paginas:
 // include_once "template.php";
-// $content = "<html></html>";
+// $content = "--html--";
+// 
 // echo $top;
 // echo $content;
 // echo $bottom;
