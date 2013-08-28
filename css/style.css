@@ -1,39 +1,39 @@
 ﻿*{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	background-image: url('../img/bg0.png');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url('../img/bg0.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000000;
 }
 
 header{
-	margin: 0;
-	padding: 0;
-	min-width: 1450px;
-	width: 100%;
-	height: auto;
-	position: relative;
-	float: left;
-	z-index: 990;
-	background: url('../img/header-overlay.png') 50% 100% repeat-x;
-	background-color: transparent;
-	font-size: 18px;
-	color: #CCCCCC;
+    margin: 0;
+    padding: 0;
+    min-width: 1450px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    float: left;
+    z-index: 990;
+    background: url('../img/header-overlay.png') 50% 100% repeat-x;
+    background-color: transparent;
+    font-size: 18px;
+    color: #CCCCCC;
 }
 
 /*Logo do cabeçalho*/
 #logo{
-	float: left;
-	position: relative;
-	top: 3px;
-	margin-left: 5%; 
+    float: left;
+    position: relative;
+    top: 3px;
+    margin-left: 5%; 
 }
 
 /*Menu do cabeçalho*/
@@ -44,83 +44,83 @@ header{
 }
 
 .menu li.item1{
-	background: none;
+    background: none;
 }
 
-	.menu li{
-		position: relative;
-		float: left;
-		background-image: url('../img/divider.png');
-		background-repeat: repeat-y;
-	}
+    .menu li{
+        position: relative;
+        float: left;
+        background-image: url('../img/divider.png');
+        background-repeat: repeat-y;
+    }
 
-		.menu li a{
-		  color: #FFF;
-		  text-decoration: none;
-		  font-weight: bold;
-		  padding: 6px 15px;
-		  margin: 0px 10px;
-		  display: block;
-		  text-shadow: -1px -1px 1px rgba(0,0,0,0.4);
-		}
+        .menu li a{
+          color: #FFF;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 6px 15px;
+          margin: 0px 10px;
+          display: block;
+          text-shadow: -1px -1px 1px rgba(0,0,0,0.4);
+        }
 
-		.menu li a:hover{
-		  background: -moz-linear-gradient(top, #000 0%, #2d2d2d 50%, #000 51%, #2D6FBE 100%);
-		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(50%,#2d2d2d), color-stop(51%,#2d2d2d), color-stop(100%,#000));
-		  opacity: 0.8;
-		  z-index: 1;
-		  border-radius: 5px;
-		  text-shadow:0px 0px 5px #fff;
-		}
+        .menu li a:hover{
+          background: -moz-linear-gradient(top, #000 0%, #2d2d2d 50%, #000 51%, #2D6FBE 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(50%,#2d2d2d), color-stop(51%,#2d2d2d), color-stop(100%,#000));
+          opacity: 0.8;
+          z-index: 1;
+          border-radius: 5px;
+          text-shadow:0px 0px 5px #fff;
+        }
 
-		.menu li ul{
-		  position: absolute;
-		  top: 34px;
-		  left: -5px;
-		  display: none;
-		  padding: 0px;
-		}
+        .menu li ul{
+          position: absolute;
+          top: 34px;
+          left: -5px;
+          display: none;
+          padding: 0px;
+        }
 
-			.menu li:hover ul, .menu li.over ul{
-			  display: block;
-			}
+            .menu li:hover ul, .menu li.over ul{
+              display: block;
+            }
 
-			.menu li ul li{
-				font-size: 13px;
-			  	display: block;
-			  	padding: 1px 0px;
-			  	margin: 0px 15px;
-			  	width: 250px;
-				background: url('../img/header-overlay.png') 50% 100% repeat-x;
-				background-color: transparent;
-				border-radius: 5px;
-			}
+            .menu li ul li{
+                font-size: 13px;
+                display: block;
+                padding: 1px 0px;
+                margin: 0px 15px;
+                width: 250px;
+                background: url('../img/header-overlay.png') 50% 100% repeat-x;
+                background-color: transparent;
+                border-radius: 5px;
+            }
 
 /*Botão de log with facebook*/
 #logWith{
-	float: left;
-	position: relative;
-	top: 5px;
+    float: left;
+    position: relative;
+    top: 5px;
 }
 
 /*Botões de redes sociais*/
 #redesSociais{
-	float: left;
-	margin-left: 5%;
+    float: left;
+    margin-left: 5%;
 }
 
 #redesSociais a:hover{
 }
 
 #todo{
-	min-width: 850px;
-	width: 100px;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	top: 34px;
-	text-align: center;
+    min-width: 850px;
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 34px;
+    text-align: center;
 }
 
 #banner{
@@ -128,152 +128,152 @@ header{
 }
 
 .menu_sup{
-	background: url('../img/header-overlay.png') 50% 100% repeat-x;
-	background-color: transparent;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	min-width: 850px;
-	width: 850px;
-	height: auto;
-	text-align: left;
-	list-style-type: none;
-	float: left;
-	border-radius: 4px;
+    background: url('../img/header-overlay.png') 50% 100% repeat-x;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 850px;
+    width: 850px;
+    height: auto;
+    text-align: left;
+    list-style-type: none;
+    float: left;
+    border-radius: 4px;
 }
 
-	.menu_sup li{
-		position: relative;
-		float: left;
-		background-image: url('../img/divider.png');
-		background-repeat: repeat-y;
-	}
+    .menu_sup li{
+        position: relative;
+        float: left;
+        background-image: url('../img/divider.png');
+        background-repeat: repeat-y;
+    }
 
-		.menu_sup li a{
-			color: #FFF;
-			text-decoration: none;
-			padding: 3px 22px;
-			margin: 1px 10px;
-			display: block;
-			font-weight: bold;
-		}
+        .menu_sup li a{
+            color: #FFF;
+            text-decoration: none;
+            padding: 3px 22px;
+            margin: 1px 10px;
+            display: block;
+            font-weight: bold;
+        }
 
-		.menu_sup li a:hover{
-		  background: -moz-linear-gradient(top, #000 0%, #2d2d2d 50%, #000 51%, #2D6FBE 100%);
-		  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(50%,#2d2d2d), color-stop(51%,#2d2d2d), color-stop(100%,#000));
-		  opacity: 0.8;
-		  z-index: 1;
-		  border-radius: 4px;
-		  text-shadow:0px 0px 5px #fff;
-		}
+        .menu_sup li a:hover{
+          background: -moz-linear-gradient(top, #000 0%, #2d2d2d 50%, #000 51%, #2D6FBE 100%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(50%,#2d2d2d), color-stop(51%,#2d2d2d), color-stop(100%,#000));
+          opacity: 0.8;
+          z-index: 1;
+          border-radius: 4px;
+          text-shadow:0px 0px 5px #fff;
+        }
 
-		.menu_sup li ul{
-			position: absolute;
-			display: none;
-			float: left;
-			list-style-type: none;
-		}
+        .menu_sup li ul{
+            position: absolute;
+            display: none;
+            float: left;
+            list-style-type: none;
+        }
 
-			.menu_sup li:hover ul, .menu_sup li.over ul{
-			  	display: block;
-			  	z-index: 10;
-			}
+            .menu_sup li:hover ul, .menu_sup li.over ul{
+                display: block;
+                z-index: 10;
+            }
 
-			.menu_sup li ul li{
-				font-size: 13px;
-			  	display: block;
-			  	padding: 1px 0px;
-			  	margin: 0px 0px;
-			  	width: 150px;
-				background: url('../img/header-overlay.png') 50% 100% repeat-x;
-				background-color: transparent;
-				border-radius: 5px;
-			}
+            .menu_sup li ul li{
+                font-size: 13px;
+                display: block;
+                padding: 1px 0px;
+                margin: 0px 0px;
+                width: 150px;
+                background: url('../img/header-overlay.png') 50% 100% repeat-x;
+                background-color: transparent;
+                border-radius: 5px;
+            }
 
 #sub_menu1 li{
-	margin: 0px 0px;
-	padding: 0px 0px;
-	text-align: left;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    text-align: left;
 }
 
 .menu_sup li.item1{
-	background: none;
+    background: none;
 }
 
 
 #menu_lateral{
-	margin-top: 4%;
+    margin-top: 4%;
 }
 
 /*Lista do menu lateral*/
 .menu_lat{
-	background: url('../img/header-overlay.png') repeat-x;
-	background-size: 100%;
-	background-color: transparent;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	min-width: 200px;
-	width: 23%;
-	height: auto;
-	text-align: left;
-	list-style-type: none;
-	float: left;
-	border-radius: 4px;
+    background: url('../img/header-overlay.png') repeat-x;
+    background-size: 100%;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 200px;
+    width: 23%;
+    height: auto;
+    text-align: left;
+    list-style-type: none;
+    float: left;
+    border-radius: 4px;
 }
 
-	.menu_lat li a{
-		color: #FFF;
-		text-decoration: none;
-		text-align: left;
-		padding: 5px 10px;
-		margin: 0px 0px;
-		display: block;
-		font-weight: bold;
-	}
+    .menu_lat li a{
+        color: #FFF;
+        text-decoration: none;
+        text-align: left;
+        padding: 5px 10px;
+        margin: 0px 0px;
+        display: block;
+        font-weight: bold;
+    }
 
-	.menu_lat li a:hover{
-		background: -moz-linear-gradient(top, #000 0%, #2d2d2d 50%, #000 51%, #2D6FBE 100%);
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(50%,#2d2d2d), color-stop(51%,#2d2d2d), color-stop(100%,#000));
-		opacity: 0.8;
-		z-index: 1;
-		border-radius: 4px;
-		text-shadow: 0px 0px 5px #fff;
-	}
+    .menu_lat li a:hover{
+        background: -moz-linear-gradient(top, #000 0%, #2d2d2d 50%, #000 51%, #2D6FBE 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(50%,#2d2d2d), color-stop(51%,#2d2d2d), color-stop(100%,#000));
+        opacity: 0.8;
+        z-index: 1;
+        border-radius: 4px;
+        text-shadow: 0px 0px 5px #fff;
+    }
 
-	.menu_lat li{
-		text-align: left;
-		display: block;
-		position: relative;
-		float: left;
-		background-image: url('../img/dividerh.png');
-		width: 100%;
-		background-repeat: repeat-x;
-	}
+    .menu_lat li{
+        text-align: left;
+        display: block;
+        position: relative;
+        float: left;
+        background-image: url('../img/dividerh.png');
+        width: 100%;
+        background-repeat: repeat-x;
+    }
 
-	.menu_lat li.item1{
-	background: none;
+    .menu_lat li.item1{
+    background: none;
 }
 
 .menu_lat li img{
-	margin: 0px;
-	text-align: center;
+    margin: 0px;
+    text-align: center;
 }
 
 /*Conteúdo central principal*/
 #centro{
-	margin: 0;
-	padding: 0;
-	position: relative;
-	float: left;
-	min-width: 645px;
-	width: 645px;
-	height: auto;
-	margin-left: 5px;
-	background: url('../img/header-overlay.png') repeat-x;
-	background-size: 100%;
-	background-color: transparent;
-	border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+    min-width: 645px;
+    width: 645px;
+    height: auto;
+    margin-left: 5px;
+    background: url('../img/header-overlay.png') repeat-x;
+    background-size: 100%;
+    background-color: transparent;
+    border-radius: 4px;
 }
 
 /*Carousel de notícias*/
@@ -281,32 +281,32 @@ header{
     padding: 10px 12px;
 }
 
-	.html_carousel div.slide {
-	    position: relative;
-	}
+    .html_carousel div.slide {
+        position: relative;
+    }
 
-		.html_carousel div.slide div {
-		    background-color: rgba(0, 0, 0, 0.6);
-		    width: 620px;
-		    display: none;
-		    position: absolute;
-		    bottom: 0;
-		}
+        .html_carousel div.slide div {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 620px;
+            display: none;
+            position: absolute;
+            bottom: 0;
+        }
 
-		.html_carousel div.slide h4 {
-		    font-size: 35px;
-		    padding: 30px 0 0 90px;
-		}
+        .html_carousel div.slide h4 {
+            font-size: 35px;
+            padding: 30px 0 0 90px;
+        }
 
-		.html_carousel div.slide p {
-		    font-size: 16px;
-		    padding: 0 0 30px 100px;
-		}
+        .html_carousel div.slide p {
+            font-size: 16px;
+            padding: 0 0 30px 100px;
+        }
 
-			.html_carousel div.slide h4, .html_carousel div.slide p {
-			    color: #fff;
-			    margin: 0;
-			}
+            .html_carousel div.slide h4, .html_carousel div.slide p {
+                color: #fff;
+                margin: 0;
+            }
 
 .clearfix {
     float: none;
@@ -315,84 +315,84 @@ header{
 
 /*Campo de notícias da parte inferior ao carousel*/
 #campo_noticias{
-	margin: 0px;
-	border: 1px solid #fff;
+    margin: 0px;
+    border: 1px solid #fff;
 }
 
 .noticias{
-	border-bottom: 1px solid #fff;
-	width: 630px;
-	height: 120px;
-	float: left;
-	position: relative;
-	color: #fff;
-	margin: 0;
-	padding: 0px 7px;
+    border-bottom: 1px solid #fff;
+    width: 630px;
+    height: 120px;
+    float: left;
+    position: relative;
+    color: #fff;
+    margin: 0;
+    padding: 0px 7px;
 }
 
-	.noticias a{
-		color: #fff;
-	}
+    .noticias a{
+        color: #fff;
+    }
 
-	.noticias a:hover{
-		text-shadow: 0 0 5px #fff;
-	}
+    .noticias a:hover{
+        text-shadow: 0 0 5px #fff;
+    }
 
-		.noticias a img{
-			border: 1px solid #000;
-			margin: 8px 5px;
-			padding: 0;
-			float: left;
-			position: relative;
-		}
+        .noticias a img{
+            border: 1px solid #000;
+            margin: 8px 5px;
+            padding: 0;
+            float: left;
+            position: relative;
+        }
 
-		.noticias a img:hover{
-			border: 1px solid #fff;
-		}
+        .noticias a img:hover{
+            border: 1px solid #fff;
+        }
 
-		.noticias a h2{
-			width: 100px;
-			height: auto;
-			float: left;
-			position: relative;
-			margin: 5px 0px;
-			padding: 0;
-		}
+        .noticias a h2{
+            width: 100px;
+            height: auto;
+            float: left;
+            position: relative;
+            margin: 5px 0px;
+            padding: 0;
+        }
 
-	.noticias p{
-		float: left;
-		position: absolute;
-		left: 165px;
-		top: 40px;
-		margin: 0px 3px;
-	}
+    .noticias p{
+        float: left;
+        position: absolute;
+        left: 165px;
+        top: 40px;
+        margin: 0px 3px;
+    }
 
 #readmore{
-	text-decoration: none;
-	position: absolute;
-	top: 90px;
-	left: 165px;
-	margin: 0px 3px;
+    text-decoration: none;
+    position: absolute;
+    top: 90px;
+    left: 165px;
+    margin: 0px 3px;
 }
 
 #data{
-	position: absolute;
-	top: 90px;
-	left: 500px;
-	font-size: 11px;
+    position: absolute;
+    top: 90px;
+    left: 500px;
+    font-size: 11px;
 }
 
 footer{
-	margin: 0;
-	padding: 0;
-	font-size: 11px;
-	position: relative;
-	float: left;
-	width: 850px;
-	height: auto;
-	color: #fff;
-	text-align: center;
-	background: url('../img/header-overlay.png') repeat-x;
-	background-size: 100%;
-	margin-top: 4%;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    position: relative;
+    float: left;
+    width: 850px;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    background: url('../img/header-overlay.png') repeat-x;
+    background-size: 100%;
+    margin-top: 4%;
 }
