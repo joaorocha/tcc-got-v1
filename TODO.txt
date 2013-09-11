@@ -1,0 +1,5 @@
+-- Corrigir diagrama de sequencia (dividir em 6)
+-- Trazer Diagrama de classe
+-- Trazer Modelo de dados
+-- Trazer Dicionario de dado
+-- Trazer Esboço do artigo

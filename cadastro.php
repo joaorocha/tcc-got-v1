@@ -1,11 +1,9 @@
 <?php
-error_reporting(E_ALL);
 // Conexão com o banco
 $server = "127.0.0.1";
-$db = "GOT";
-$user = "postgres";
-$pass = "tccgot";
-$dbcon = new PDO("pgsql:host={$server};dbname={$db}", $user, $pass);
+$db = "got";
+$user = "got";
+$dbcon = new PDO("pgsql:host={$server};dbname={$db}", $user);
 
 $dados_usuario = array(
     ":nome" => $_POST['nome'],
