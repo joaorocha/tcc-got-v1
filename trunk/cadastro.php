@@ -16,7 +16,7 @@ $dados_usuario = array(
 
 $criar_usuario = $dbcon->prepare('INSERT INTO usuario VALUES (:nome, :login, :passwd, :status, :tipo');
 $criar_usuario->execute($dados_usuario);
-echo "<html><body><h1>Usuario '{$dados_usuario[:login]}' cadastrado!</h1></body></html>"
+echo "<html><body><h1>Usuario '{$dados_usuario[":login"]}' cadastrado!</h1></body></html>";
 
 // Fecha conexão com o banco
 $dbcon = null;
