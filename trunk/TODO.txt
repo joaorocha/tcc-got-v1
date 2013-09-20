@@ -1,5 +1,32 @@
--- Corrigir diagrama de sequencia (dividir em 6)
--- Trazer Diagrama de classe
--- Trazer Modelo de dados
--- Trazer Dicionario de dado
--- Trazer Esboço do artigo
+-- Corrigir modelo do banco
+()
+-- Corrigir diagrama de classes
+()
+-- Sincronizar diagrama de classes com modelo do banco
+()
+-- Migrar modelo para o psql
+()
+-- Atualizar o dicionario de dados
+()
+
+
+
+
+
+
+
+___________________________________________________
+Sequencia:
+add coluna de banco
+
+
+Modelo: Criar tipos de noticia
+
+dicionario: MUITO mais detalhes,
+Ligação com => Coluna referencia com a tabela tal,
+Nome de tabela maiusculo e no singular,
+Incluir 'FK' em todas as chaves estrangeiras,
+
+
+Artigo: Explicar sobre o jogo depois de explicar a historia, falar sobre o mercado, os diferenciais, as vantagens ao usuário
+criar uma "gancho" no fim do artigo que coloca as implementações futuras.
