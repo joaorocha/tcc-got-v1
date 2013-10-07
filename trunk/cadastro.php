@@ -5,13 +5,11 @@ $db = "got";
 $user = "got";
 $dbcon = new PDO("pgsql:host={$server};dbname={$db}", $user);
 
-$dados_usuario = array(
-    ":nome" => $_POST['nome'],
-    ":login" => $_POST['login'],
-    ":passwd" => $_POST['passwd'],
-    ":status" => 1,
-    ":tipo" => 'u'
-);
+$dados_usuario[":nome"] = $_POST['nome'];
+$dados_usuario[":login"] = $_POST['login'];
+$dados_usuario[":passwd"] = $_POST['passwd'];
+$dados_usuario[":status"] = 1;
+$dados_usuario[":tipo"] = 'u';
 
 
 $criar_usuario = $dbcon->prepare('INSERT INTO usuario VALUES (:nome, :login, :passwd, :status, :tipo');

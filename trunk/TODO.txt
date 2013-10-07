@@ -30,3 +30,9 @@ Incluir 'FK' em todas as chaves estrangeiras,
 
 Artigo: Explicar sobre o jogo depois de explicar a historia, falar sobre o mercado, os diferenciais, as vantagens ao usuário
 criar uma "gancho" no fim do artigo que coloca as implementações futuras.
+
+Falar dos diferenciais do jogo no desenvolvimento
+
+'''Aplicações web:http://www.rnp.br/newsgen/9710/n5-3.html 
+PHP: PHP Programando com orientação objetos
+Pablo Dall'Oglio editora Novatec'''
