@@ -1,9 +1,9 @@
 begin;
 CREATE TABLE usuario (
     id_usuario integer NOT NULL,
-    nome_usuario character varying(100) NOT NULL,
+    nome_usuario character varying(50) NOT NULL,
     login_usuario character varying(20) NOT NULL,
-    passwd_usuario character varying(60) NOT NULL,
+    passwd_usuario character varying(20) NOT NULL,
     status_usuario boolean NOT NULL,
     tipo_usuario character varying(1) NOT NULL
 );

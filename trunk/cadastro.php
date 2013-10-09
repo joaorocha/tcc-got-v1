@@ -15,9 +15,9 @@ $usuario[":tipo_usuario"] = $_POST['tipo'];
 
 
 // Insere os dados no banco (provavelmente vai pro metodo)
-$criar_usuario = $dbcon->prepare('INSERT INTO usuario (nome_usuario, login_usuario, passwd_usuario, status_usuario, tipo_usuario) VALUES (nome_usuario, login_usuario, passwd_usuario, status_usuario, tipo_usuario)');
+$criar_usuario = $dbcon->prepare('INSERT INTO usuario (nome_usuario, login_usuario, passwd_usuario, status_usuario, tipo_usuario) VALUES (:nome_usuario, :login_usuario, :passwd_usuario, :status_usuario, :tipo_usuario)');
 $criar_usuario->execute($usuario);
-echo "<html><body><h1>Usuario '{$usuario[":login"]}' cadastrado!</h1></body></html>";
+echo "<html><body><h1>Usuario '{$usuario[":login_usuario"]}' cadastrado!</h1></body></html>";
 
 
 // Fecha conexão com o banco
