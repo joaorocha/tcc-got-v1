@@ -396,3 +396,18 @@ footer{
     background-size: 100%;
     margin-top: 4%;
 }
+
+.cor {
+    color: #fff;
+}
+
+#cadastro {
+    margin: 10px;
+    padding: 0;
+    float: left;
+}
+
+.imgcadastro {
+    float: left;
+    margin: 5px 0px 30px 30px;
+}
