@@ -3,15 +3,6 @@
 include_once "template.php";
 
 $content = '<div id="centro">
-    Cadastro de usuário: 
-    <form action="cadastro.php" method="post">
-    Nome: <input type="text" name="nome"><br>
-    Login: <input type="text" name="login"><br>
-    Senha: <input type="password" name="passwd"><br>
-    <input type="hidden" value="1" name="status">
-    <input type="hidden" value="U" name="tipo">
-    <input type="submit" value="Cadastrar">
-    </form>
     <!--CAROUSEL-->
     <div class="html_carousel">
         <div id="foo3">

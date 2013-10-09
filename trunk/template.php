@@ -80,7 +80,7 @@ $top = '<!DOCTYPE html>
         <div id="menu_superior">
             <nav>
                 <ul class="menu_sup">
-                    <li class="item1"><a href="#">Início</a></li>
+                    <li class="item1"><a href="index.php">Início</a></li>
                     <li><a href="#">Notícias</a>
                         <ul id="sub_menu1">
                             <li><a href="#">Eventos</a></li>
@@ -96,7 +96,7 @@ $top = '<!DOCTYPE html>
                         </ul>
                     </li>
                     <li><a href="#">Fórum</a></li>
-                    <li><a href="#">Cadastro</a></li>
+                    <li><a href="cadastrar.php">Cadastro</a></li>
                     <li><a href="#">Ranking</a>
                         <ul>
                             <li><a href="#">Geral</a></li>
