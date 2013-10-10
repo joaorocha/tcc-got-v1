@@ -1,8 +1,7 @@
 <?php
-
-include_once "template.php";
-
-$content = '<div id="centro">
+include_once "template/top.php";
+?>
+<div id="centro">
     <!--CAROUSEL-->
     <div class="html_carousel">
         <div id="foo3">
@@ -69,10 +68,7 @@ $content = '<div id="centro">
             <p id="data">07 de Julho de 2013</p>
         </div>
     </div>
-</div>';
-
-echo $top;
-echo $content;
-echo $bottom;
-
+</div>'
+<?php
+include_once "template/bottom.php";
 ?>
