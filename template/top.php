@@ -1,6 +1,4 @@
-<?php
-
-$top = '<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <script src="js/jquery-1.10.1.min.js"></script>
@@ -42,34 +40,10 @@ $top = '<!DOCTYPE html>
 </head>
 <body>
     <!--CABEÇALHO-->
-    <header>
-        <nav class="navHeader">
-            <div id="logo">
-                <a href="#"><img src="img/logodw.png" width="150" height="30"></a>
-            </div>
-            <ul class="menu">
-                <li class="item1"><a href="#">Jogos</a>
-                    <ul id="sub_menu">
-                        <li><a href="#">Game Of Thrones-The Game</a></li>
-                        <li><a href="#">The Adventures of Cpt. Cleave</a></li>
-                        <li><a href="#">Nightmare</a></li>
-                        <li><a href="#">Mobile Games</a></li>   
-                    </ul>
-                </li>   
-                <li><a href="#http://www.darkwingsgames.com.br/contato">Contato</a></li>
-                <li><a href="#http://www.darkwingsgames.com.br/jobs">Trabalhe conosco</a></li>
-                <li><a href="#http://www.darkwingsgames.com.br/parceiros">Parceiros</a></li>
-                <li><a href="#http://www.darkwingsgames.com.br/servicos">Outros serviços</a></li>
-            </ul>
-            <div id="logWith">
-                <a href="#"><img src="img/logWith.png" width="154" height="22"></a>
-            </div>
-            <div id="redesSociais">
-                <a href="https://www.facebook.com/darkwingsgames"><img src="img/Cracked-Facebook-Logo.png" width="30" height="30"></a>
-                <a href="#"><img src="img/twitter-logo-break.png" width="30" height="30"></a>
-            </div>
-        </nav>
-    </header>
+    <?php
+    include_once "template/graveyardbar.php";
+    ?>
+
     <!--TUDO-->
     <div id="todo">
         <!--BANNER-->
@@ -96,7 +70,7 @@ $top = '<!DOCTYPE html>
                         </ul>
                     </li>
                     <li><a href="#">Fórum</a></li>
-                    <li><a href="cadastrar.php">Cadastro</a></li>
+                    <li><a href="cadastro.php">Cadastro</a></li>
                     <li><a href="#">Ranking</a>
                         <ul>
                             <li><a href="#">Geral</a></li>
@@ -115,7 +89,6 @@ $top = '<!DOCTYPE html>
                     <li class="item1"><img src="img/principal1.png" width="200" height="90"></li>
                     <li><a href="#">História</a></li>
                     <li><a href="#">Compre Créditos</a></li>
-                    <li><a href="#">Papéis de parede</a></li>
                     <li><a href="#">Sobre GoT</a></li>
                     <li><a href="#">Entre em Contato</a></li>
                     <li><img src="img/usrpanel.png" width="200" height="90"></li>
@@ -126,22 +99,4 @@ $top = '<!DOCTYPE html>
                     <li><a href="#">P.v.P</a></li>
                 </ul>
             </nav>
-        </div>';
-
-$bottom = '<footer>
-        Jogo e sistemas © CopyRight 2013 by www.gotgame.com - Todos os direitos reservados.<br>
-        Personagens, livros e séries © CopyRight 1996 by HBO George R. R. Martin - Todos os direitos reservados.<br>
-        Powered by BSG: <br> <a href="#"><img src="img/minilogo.png"></a>
-        </footer></div>
-</body>
-</html>';
-
-
-// // Inclua o seguinte codigo nas paginas:
-// include_once "template.php";
-// $content = "--html--";
-// 
-// echo $top;
-// echo $content;
-// echo $bottom;
-?>
+        </div>
