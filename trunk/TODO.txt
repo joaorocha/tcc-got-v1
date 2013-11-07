@@ -1,3 +1,26 @@
+Fazer - abstract
+Arrumar citações para caixa alta no autor
+(SURNAME, p. xx, 2000)
+Imagens - Legenda em cima com numero da figura e descrição
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- Corrigir modelo do banco
 ()
 -- Corrigir diagrama de classes
@@ -8,7 +31,7 @@
 ()
 -- Atualizar o dicionario de dados
 ()
-
+-- Criar tabela inventario (chaves id_inventario, id_pers, id_item)
 
 
 
@@ -33,6 +56,6 @@ criar uma "gancho" no fim do artigo que coloca as implementações futuras.
 
 Falar dos diferenciais do jogo no desenvolvimento
 
-'''Aplicações web:http://www.rnp.br/newsgen/9710/n5-3.html 
+'''Aplicações web:http://www.rnp.br/newsgen/9710/n5-3.html
 PHP: PHP Programando com orientação objetos
 Pablo Dall'Oglio editora Novatec'''
