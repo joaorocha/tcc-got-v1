@@ -21,7 +21,6 @@ $this->pageTitle=Yii::app()->name . ': Login';
 			<li>Tenha certeza de que todos os dados digitados estão corretos antes de confirmar o login.</li>
 		</ol>
 	</div>
-<div class="login-body">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
@@ -29,36 +28,25 @@ $this->pageTitle=Yii::app()->name . ': Login';
 		'validateOnSubmit'=>true,
 	),
 )); ?>
+<div class="login-body">
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
+		<label>Login:</label><br>
 		<?php echo $form->textField($model,'username'); ?>
 		<?php echo $form->error($model,'username'); ?>
-	</div>
+		<br><br>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
+		<label>Senha:</label><br>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
-	</div>
+		<br><br>
 
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
+		<?php echo CHtml::submitButton('Logar'); ?><br>
 		<a href="javascript:void(0)">Esqueceu a senha?</a>
+
 	</div>
 	<div id="login-image">
 		<img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/background.png" width="290" height="430">
 	</div>
+<?php $this->endWidget(); ?>
 </div>
 <!--FIM LOGIN-->

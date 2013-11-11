@@ -11,7 +11,9 @@ class SiteController extends Controller
 			// captcha action renders the CAPTCHA image displayed on the contact page
 			'captcha'=>array(
 				'class'=>'CCaptchaAction',
-				'backColor'=>0xFFFFFF,
+				'backColor'=>0x333333,
+				'transparent'=>true,
+				'foreColor'=>0xffffff
 			),
 			// page action renders "static" pages stored under 'protected/views/site/pages'
 			// They can be accessed via: index.php?r=site/page&view=FileName
@@ -65,7 +67,7 @@ class SiteController extends Controller
 					"Content-Type: text/plain; charset=UTF-8";
 
 				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+				Yii::app()->user->setFlash('contact','Obrigado por reportar, entraremos em contato em breve!');
 				$this->refresh();
 			}
 		}

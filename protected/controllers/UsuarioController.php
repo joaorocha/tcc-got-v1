@@ -28,7 +28,7 @@ class UsuarioController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','create'),
+				'actions'=>array('create'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -36,7 +36,7 @@ class UsuarioController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete',),
+				'actions'=>array('admin','delete','index','view'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -71,7 +71,7 @@ class UsuarioController extends Controller
 		{
 			$model->attributes=$_POST['Usuario'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_usuario));
+				$this->redirect(Yii::app()->request->baseUrl. '/site/login');
 		}
 
 		$this->render('create',array(
