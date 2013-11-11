@@ -1,4 +1,5 @@
-<?php /* @var $this Controller */ ?>
+<?php /* @var $this Controller */
+    include_once "navbar.php"; ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -16,19 +17,26 @@
 </head>
 
 <body>
+<!--FACEBOOK SDK-->
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+    (document, 'script', 'facebook-jssdk'));
+</script>
+<!--FIM FACEBOOK SDK-->
 
 <div class="container" id="page">
 
-    <!--BARRA DE NAVEGAÇÃO-->
-    <div id="navBar">
-        <nav id="nav1" class="cl-effect-21">
-            <a>Jogos</a>
-            <a>Contato</a>
-            <a>Trabalhe Conosco</a>
-            <a>Parceiros</a>
-            <a>Outros Serviços</a>
-         </nav>
-    </div><!--FIM BARRA DE NAVEGAÇÃO-->
+    <?php echo $navbar; ?>
+
+
     <!--BANNER-->
     <div id="banner">
         <a href="<?php echo Yii::app()->request->baseUrl; ?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/bannergot2.png" width="930" height="300"></a>
@@ -45,7 +53,7 @@
                 <a href="javascript:void(0)">Fórum</a>
                 <a href="<?php echo Yii::app()->request->baseUrl; ?>/usuario/create">Cadastro</a>
                 <a href="javascript:void(0)">Ranking</a>
-                <a href="javascript:void(0)">Suporte</a>
+                <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/contact">Suporte</a>
             </nav>
         </div><!--FIM MENU SUPERIOR-->
         <!--LATERAL ESQUERDA-->
@@ -81,24 +89,23 @@
         <div id="redes">
             <!--FACEBOOK-->
             <div id="facebook">
-                Facebook
-            </div><!--FACEBOOK-->
+                <div class="fb-like-box" data-href="https://www.facebook.com/graveyard.devel" data-width="300" data-height="250" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+            </div><!--FIM FACEBOOK-->
             <!--TWITTER-->
             <div id="twitter">
-                    Twitter
-                    <!--<a class="twitter-timeline"  href="https://twitter.com/Rickinbsb"  data-widget-id="398267477240475648">Tweets by @Rickinbsb</a>
-                    <script>
-                        !function(d,s,id) {
-                            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-                            if(!d.getElementById(id)) {
-                                js=d.createElement(s);
-                                js.id=id;
-                                js.src=p+"://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js,fjs);
-                            }
+                <a class="twitter-timeline" href="https://twitter.com/GraveyardStdios" data-widget-id="398808782471319552"></a>
+                <script>
+                    !function(d,s,id) {
+                        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                        if(!d.getElementById(id)) {
+                            js=d.createElement(s);
+                            js.id=id;
+                            js.src=p+"://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js,fjs);
                         }
-                        (document,"script","twitter-wjs");
-                    </script>-->
+                    }
+                    (document,"script","twitter-wjs");
+                </script>
             </div><!--FIM TWITTER-->
         </div><!--FIM REDES-->
         <!--FOOTER-->
