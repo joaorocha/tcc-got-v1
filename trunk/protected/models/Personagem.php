@@ -16,11 +16,13 @@
  * @property integer $vitalidade_personagem
  * @property integer $agilidade_personagem
  * @property integer $defesa_personagem
+ * @property integer $id_casa
  *
  * The followings are the available model relations:
  * @property Usuario $idUsuario
  * @property Mentor $idMentor
  * @property Level $idLevel
+ * @property Casa $idCasa
  */
 class Personagem extends CActiveRecord
 {
@@ -40,14 +42,20 @@ class Personagem extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nome_personagem, id_mentor, id_usuario', 'required'),
-			array('gold_personagem, xp_personagem, id_level, id_mentor, id_usuario, forca_personagem, inteligencia_personagem, vitalidade_personagem, agilidade_personagem, defesa_personagem', 'numerical', 'integerOnly'=>true),
+			array('nome_personagem', 'required'),
+			array('gold_personagem, xp_personagem, id_level, id_mentor, id_usuario, forca_personagem, inteligencia_personagem, vitalidade_personagem, agilidade_personagem, defesa_personagem, id_casa', 'numerical', 'integerOnly'=>true),
 			array('nome_personagem', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_personagem, nome_personagem, gold_personagem, xp_personagem, id_level, id_mentor, id_usuario, forca_personagem, inteligencia_personagem, vitalidade_personagem, agilidade_personagem, defesa_personagem', 'safe', 'on'=>'search'),
+			array('id_personagem, nome_personagem, gold_personagem, xp_personagem, id_level, id_mentor, id_usuario, forca_personagem, inteligencia_personagem, vitalidade_personagem, agilidade_personagem, defesa_personagem, id_casa', 'safe', 'on'=>'search'),
 		);
 	}
+
+	public function beforeSave(){
+	    $this->id_usuario = Yii::app()->user->id;
+	    return parent::beforeSave();
+	}
+
 
 	/**
 	 * @return array relational rules.
@@ -60,6 +68,7 @@ class Personagem extends CActiveRecord
 			'idUsuario' => array(self::BELONGS_TO, 'Usuario', 'id_usuario'),
 			'idMentor' => array(self::BELONGS_TO, 'Mentor', 'id_mentor'),
 			'idLevel' => array(self::BELONGS_TO, 'Level', 'id_level'),
+			'idCasa' => array(self::BELONGS_TO, 'Casa', 'id_casa'),
 		);
 	}
 
@@ -69,18 +78,19 @@ class Personagem extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_personagem' => 'Id',
-			'nome_personagem' => 'Nome',
-			'gold_personagem' => 'Gold',
-			'xp_personagem' => 'Xp',
-			'id_level' => 'Level',
+			'id_personagem' => 'Id Personagem',
+			'nome_personagem' => 'Nome Personagem',
+			'gold_personagem' => 'Gold Personagem',
+			'xp_personagem' => 'Xp Personagem',
+			'id_level' => 'Id Level',
 			'id_mentor' => 'Id Mentor',
 			'id_usuario' => 'Id Usuario',
-			'forca_personagem' => 'Forca',
-			'inteligencia_personagem' => 'Inteligencia',
-			'vitalidade_personagem' => 'Vitalidade',
-			'agilidade_personagem' => 'Agilidade',
-			'defesa_personagem' => 'Defesa',
+			'forca_personagem' => 'Forca Personagem',
+			'inteligencia_personagem' => 'Inteligencia Personagem',
+			'vitalidade_personagem' => 'Vitalidade Personagem',
+			'agilidade_personagem' => 'Agilidade Personagem',
+			'defesa_personagem' => 'Defesa Personagem',
+			'id_casa' => 'Id Casa',
 		);
 	}
 
@@ -114,6 +124,7 @@ class Personagem extends CActiveRecord
 		$criteria->compare('vitalidade_personagem',$this->vitalidade_personagem);
 		$criteria->compare('agilidade_personagem',$this->agilidade_personagem);
 		$criteria->compare('defesa_personagem',$this->defesa_personagem);
+		$criteria->compare('id_casa',$this->id_casa);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

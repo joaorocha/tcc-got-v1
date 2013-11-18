@@ -8,5 +8,5 @@
             <a>Parceiros</a>
             <a>Outros Serviços</a>
          </nav>
-    </div><!--FIM BARRA DE NAVEGAÇÃO-->';
-?>
+    </div><!--FIM BARRA DE NAVEGAÇÃO-->
+'; ?>

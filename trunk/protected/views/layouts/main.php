@@ -1,5 +1,10 @@
 <?php /* @var $this Controller */
-    include_once "navbar.php"; ?>
+    include_once "navbar.php";
+    if (Yii::app()->user->isGuest) {
+        $login = '<a href="'.Yii::app()->request->baseUrl.'/site/login">Login</a>';
+    } else {
+        $login = '<a href="'.Yii::app()->request->baseUrl.'/site/logout">Sair</a>';
+    }?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -36,7 +41,6 @@
 
     <?php echo $navbar; ?>
 
-
     <!--BANNER-->
     <div id="banner">
         <a href="<?php echo Yii::app()->request->baseUrl; ?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/bannergot2.png" width="930" height="300"></a>
@@ -71,7 +75,7 @@
             <div id="painel">
                 <ul class="painelLat">
                     <li><h2>Painel</h2></li>
-                    <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/login">Login</a></li>
+                    <li><?php echo $login; ?></li>
                     <li><a href="javascript:void(0)">Recuperar Senha</a></li>
                     <li><a href="javascript:void(0)">Regras</a></li>
                     <li><a href="javascript:void(0)">F.A.Q</a></li>

@@ -10,6 +10,7 @@
  * @property integer $qtd_jogadores_casa
  *
  * The followings are the available model relations:
+ * @property Personagem[] $personagems
  * @property Mentor[] $mentors
  */
 class Casa extends CActiveRecord
@@ -48,6 +49,7 @@ class Casa extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'personagems' => array(self::HAS_MANY, 'Personagem', 'id_casa'),
 			'mentors' => array(self::HAS_MANY, 'Mentor', 'id_casa'),
 		);
 	}

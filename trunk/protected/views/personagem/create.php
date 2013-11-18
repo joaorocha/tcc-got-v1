@@ -1,18 +1,9 @@
 <?php
-/* @var $this PersonagemController */
-/* @var $model Personagem */
 
-$this->breadcrumbs=array(
-	'Personagems'=>array('index'),
-	'Create',
-);
+$this->pageTitle=Yii::app()->name.': Cadastro';
+if (true)  // verificar se jah tem personagem
+    $this->renderPartial('_form', array('model'=>$model));
+else
+    $this->redirect(array('view','id'=>$model->id_personagem));
 
-$this->menu=array(
-	array('label'=>'List Personagem', 'url'=>array('index')),
-	array('label'=>'Manage Personagem', 'url'=>array('admin')),
-);
 ?>
-
-<h1>Create Personagem</h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>

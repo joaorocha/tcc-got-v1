@@ -8,6 +8,8 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Game of Thrones - The Game',
+	'sourceLanguage'=>'pt_br',
+	'language'=>'pt_br',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -23,9 +25,7 @@ return array(
 
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'senhaDificil',
-			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			'password'=>'got'
 		),
 
 	),
@@ -34,7 +34,7 @@ return array(
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
+			'allowAutoLogin'=>false,
 		),
 		// uncomment the following to enable URLs in path-format
 
@@ -52,7 +52,7 @@ return array(
 		// 'db'=>arra'y(
 		// 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		// 		),'
-		// uncomment the following to use a MySQL database
+		// uncomment the following to use a postgres database
 
 		'db'=>array(
 			'connectionString' => 'pgsql:host=localhost;dbname=got',
@@ -75,9 +75,9 @@ return array(
 				),
 				// uncomment the following to show log messages on web pages
 
-				array(
-					'class'=>'CWebLogRoute',
-				),
+				// array(
+				// 	'class'=>'CWebLogRoute',
+				// ),
 
 			),
 		),

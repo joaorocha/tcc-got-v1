@@ -10,9 +10,8 @@
  * @property integer $id_vantagem
  *
  * The followings are the available model relations:
- * @property Casa $idCasa
- * @property Vantagem $idVantagem
  * @property Personagem[] $personagems
+ * @property Casa $idCasa
  */
 class Mentor extends CActiveRecord
 {
@@ -49,9 +48,8 @@ class Mentor extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idCasa' => array(self::BELONGS_TO, 'Casa', 'id_casa'),
-			'idVantagem' => array(self::BELONGS_TO, 'Vantagem', 'id_vantagem'),
 			'personagems' => array(self::HAS_MANY, 'Personagem', 'id_mentor'),
+			'idCasa' => array(self::BELONGS_TO, 'Casa', 'id_casa'),
 		);
 	}
 
