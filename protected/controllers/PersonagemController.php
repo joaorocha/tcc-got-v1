@@ -28,7 +28,6 @@ class PersonagemController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -36,7 +35,7 @@ class PersonagemController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','index','view'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -71,7 +70,7 @@ class PersonagemController extends Controller
 		{
 			$model->attributes=$_POST['Personagem'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_personagem));
+				$this->redirect(array('update','id'=>$model->id_personagem));
 		}
 
 		$this->render('create',array(
@@ -95,12 +94,37 @@ class PersonagemController extends Controller
 		{
 			$model->attributes=$_POST['Personagem'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_personagem));
+				$this->redirect(array('update','id'=>$model->id_personagem));
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
 		));
+	}
+
+	public function listaMentores($casa)
+	{
+		switch ($casa) {
+		    case "1":
+		        $mentores = array(1,2,3);
+		        break;
+		    case "2":
+		        $mentores = array(4,5,6);
+		        break;
+		    case "3":
+		        $mentores = array(7,8,9);
+		        break;
+		    case "4":
+		        $mentores = array(10,11,12);
+		        break;
+		    case "5":
+		        $mentores = array(13,14,15);
+		        break;
+		    case "6":
+		        $mentores = array(16,17,18);
+		        break;
+		}
+		return $mentores;
 	}
 
 	/**
@@ -154,7 +178,7 @@ class PersonagemController extends Controller
 	{
 		$model=Personagem::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+			throw new CHttpException(404,'Personagem Inexistente ou deletado!');
 		return $model;
 	}
 

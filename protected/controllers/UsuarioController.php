@@ -71,7 +71,7 @@ class UsuarioController extends Controller
 		{
 			$model->attributes=$_POST['Usuario'];
 			if($model->save())
-				$this->redirect(Yii::app()->request->baseUrl. '/site/login');
+				$this->redirect(Yii::app()->request->baseUrl.'/site/login');
 		}
 
 		$this->render('create',array(
@@ -154,7 +154,7 @@ class UsuarioController extends Controller
 	{
 		$model=Usuario::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+			throw new CHttpException(404,'Personagem Inexistente ou deletado!');
 		return $model;
 	}
 

@@ -1,21 +1,11 @@
 <?php
-/* @var $this PersonagemController */
-/* @var $model Personagem */
 
-$this->breadcrumbs=array(
-	'Personagems'=>array('index'),
-	$model->id_personagem=>array('view','id'=>$model->id_personagem),
-	'Update',
-);
+$this->pageTitle=Yii::app()->name.': Cadastro';
+if (is_null($model->id_casa))
+    $this->renderPartial('_form_house', array('model'=>$model));
+elseif (is_null($model->id_mentor))
+    $this->renderPartial('_form_mentor', array('model'=>$model));
+else
+    $this->redirect(array('view','id'=>$model->id_personagem));
 
-$this->menu=array(
-	array('label'=>'List Personagem', 'url'=>array('index')),
-	array('label'=>'Create Personagem', 'url'=>array('create')),
-	array('label'=>'View Personagem', 'url'=>array('view', 'id'=>$model->id_personagem)),
-	array('label'=>'Manage Personagem', 'url'=>array('admin')),
-);
 ?>
-
-<h1>Update Personagem <?php echo $model->id_personagem; ?></h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>

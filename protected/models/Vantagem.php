@@ -6,13 +6,12 @@
  * The followings are the available columns in table 'vantagem':
  * @property integer $id_vantagem
  * @property string $descricao_vantagem
- * @property integer $valor_min_vantagem
- * @property integer $valor_max_vantagem
- * @property integer $id_atributo
- *
- * The followings are the available model relations:
- * @property Mentor[] $mentors
- * @property Atributo $idAtributo
+ * @property integer $gold_vantagem
+ * @property integer $forca_vantagem
+ * @property integer $vitalidade_vantagem
+ * @property integer $inteligencia_vantagem
+ * @property integer $agilidade_vantagem
+ * @property integer $defesa_vantagem
  */
 class Vantagem extends CActiveRecord
 {
@@ -32,12 +31,11 @@ class Vantagem extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_atributo', 'required'),
-			array('valor_min_vantagem, valor_max_vantagem, id_atributo', 'numerical', 'integerOnly'=>true),
+			array('gold_vantagem, forca_vantagem, vitalidade_vantagem, inteligencia_vantagem, agilidade_vantagem, defesa_vantagem', 'numerical', 'integerOnly'=>true),
 			array('descricao_vantagem', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_vantagem, descricao_vantagem, valor_min_vantagem, valor_max_vantagem, id_atributo', 'safe', 'on'=>'search'),
+			array('id_vantagem, descricao_vantagem, gold_vantagem, forca_vantagem, vitalidade_vantagem, inteligencia_vantagem, agilidade_vantagem, defesa_vantagem', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,8 +47,6 @@ class Vantagem extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'mentors' => array(self::HAS_MANY, 'Mentor', 'id_vantagem'),
-			'idAtributo' => array(self::BELONGS_TO, 'Atributo', 'id_atributo'),
 		);
 	}
 
@@ -62,9 +58,12 @@ class Vantagem extends CActiveRecord
 		return array(
 			'id_vantagem' => 'Id Vantagem',
 			'descricao_vantagem' => 'Descricao Vantagem',
-			'valor_min_vantagem' => 'Valor Min Vantagem',
-			'valor_max_vantagem' => 'Valor Max Vantagem',
-			'id_atributo' => 'Id Atributo',
+			'gold_vantagem' => 'Gold Vantagem',
+			'forca_vantagem' => 'Forca Vantagem',
+			'vitalidade_vantagem' => 'Vitalidade Vantagem',
+			'inteligencia_vantagem' => 'Inteligencia Vantagem',
+			'agilidade_vantagem' => 'Agilidade Vantagem',
+			'defesa_vantagem' => 'Defesa Vantagem',
 		);
 	}
 
@@ -88,9 +87,12 @@ class Vantagem extends CActiveRecord
 
 		$criteria->compare('id_vantagem',$this->id_vantagem);
 		$criteria->compare('descricao_vantagem',$this->descricao_vantagem,true);
-		$criteria->compare('valor_min_vantagem',$this->valor_min_vantagem);
-		$criteria->compare('valor_max_vantagem',$this->valor_max_vantagem);
-		$criteria->compare('id_atributo',$this->id_atributo);
+		$criteria->compare('gold_vantagem',$this->gold_vantagem);
+		$criteria->compare('forca_vantagem',$this->forca_vantagem);
+		$criteria->compare('vitalidade_vantagem',$this->vitalidade_vantagem);
+		$criteria->compare('inteligencia_vantagem',$this->inteligencia_vantagem);
+		$criteria->compare('agilidade_vantagem',$this->agilidade_vantagem);
+		$criteria->compare('defesa_vantagem',$this->defesa_vantagem);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

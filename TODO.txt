@@ -5,15 +5,14 @@ Imagens - Legenda em cima com numero da figura e descrição
 
 
 
+linha 98 SiteController
+linha 4 personagem/create.php
 
 
 
 
 
-
-
-
-
+add <META http-equiv=refresh content="10; url=http://site"> to redirect on 10 seconds
 
 
 
