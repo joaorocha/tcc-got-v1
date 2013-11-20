@@ -18,14 +18,14 @@ $this->pageTitle=Yii::app()->name . ': Login';?>
 			<li>Todos os dados da conta são de inteira responsabilidade do usuário.</li>
 			<li>Não repasse os dados da sua conta para terceiros, nem mesmo se for solicitação da própria
 				Graveyard.</li>
-			<li>Respeite as <a href="javascript:void(0)">regras</a> quando estiver dentro do jogo.</li>
+			<li>Respeite as <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/regras">regras</a> quando estiver dentro do jogo.</li>
 			<li>Tenha certeza de que todos os dados digitados estão corretos antes de confirmar o login.</li>
 		</ol>
 	</div>
 	<div id="login-body">
 		<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'login-form',
-			'enableClientValidation'=>true,
+			'enableClientValidation'=>false,
 			'clientOptions'=>array('validateOnSubmit'=>true)
 		)); ?>
 

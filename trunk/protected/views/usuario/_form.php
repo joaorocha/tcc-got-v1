@@ -12,13 +12,13 @@
 		<li>Todos os campos são obrigatórios para a realização do cadastro.</li>
 		<li>Todos os dados da conta são de inteira responsabilidade do usuário.</li>
 		<li>Não repasse os dados da sua conta para terceiros, nem mesmo se for solicitação da própria Graveyard.</li>
-		<li>Leia todas as <a href="javascript:void(0)">regras</a> antes de realizar o cadastro</li>
+		<li>Leia todas as <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/regras">regras</a> antes de realizar o cadastro</li>
 		<li>Confirme todos os dados antes de confirmar o cadatro.</li>
 	</ol>
 	<div id="cadastro-body">
 		<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'usuario-form',
-			'enableClientValidation'=>true
+			'enableClientValidation'=>false
 		)); ?>
 
 			<?php echo $form->errorSummary($model); ?>
@@ -43,7 +43,7 @@
 			<?php echo $form->error($model,'passwd_usuario'); ?>
 			<br><br>
 
-			<input type="checkbox"> Li e concordo com as <a href="javascript:void(0)">regras</a>
+			<input type="checkbox"> Li e concordo com as <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/regras">regras</a>
 			<br><br>
 
 			<?php echo CHtml::submitButton('Cadastrar'); ?>

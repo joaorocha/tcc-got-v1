@@ -43,7 +43,7 @@
                 <td colspan="3">
                     <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/mercado.jpg" style="margin:10px 0px 5px 0px;"><br>
                     <label id="gold">Gold atual: <?php echo $model->gold_personagem; ?></label>
-                    <a href="javascript:void(0)"><button>Ir para o Mercado</button></a>
+                    <a href="javascript:void(0)"><button>Ir para o Mercado*</button></a>
                 </td>
             </tr>
         </table>
