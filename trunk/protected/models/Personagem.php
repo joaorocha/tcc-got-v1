@@ -57,6 +57,32 @@ class Personagem extends CActiveRecord
 	}
 
 
+	public function listaMentores($casa)
+	{
+		switch ($casa) {
+		    case "1":
+		        $mentores = array(1,2,3);
+		        break;
+		    case "2":
+		        $mentores = array(4,5,6);
+		        break;
+		    case "3":
+		        $mentores = array(7,8,9);
+		        break;
+		    case "4":
+		        $mentores = array(10,11,12);
+		        break;
+		    case "5":
+		        $mentores = array(13,14,15);
+		        break;
+		    case "6":
+		        $mentores = array(16,17,18);
+		        break;
+		}
+		return $mentores;
+	}
+
+
 	/**
 	 * @return array relational rules.
 	 */

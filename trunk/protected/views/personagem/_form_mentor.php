@@ -15,7 +15,7 @@
 			'enableClientValidation'=>true
 		)); ?>
 			<?php echo $form->errorSummary($model); ?>
-			<?php $mentores = $this->listaMentores($model->id_casa); ?>
+			<?php $mentores = $model->listaMentores($model->id_casa); ?>
 
 			<table>
 				<tr>
