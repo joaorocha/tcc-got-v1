@@ -16,7 +16,7 @@ class SiteController extends Controller
 				'foreColor'=>0xffffff
 			),
 			// page action renders "static" pages stored under 'protected/views/site/pages'
-			// They can be accessed via: index.php?r=site/page&view=FileName
+			// They can be accessed via: /site/page/view/arquivo
 			'page'=>array(
 				'class'=>'CViewAction',
 			),
@@ -67,11 +67,11 @@ class SiteController extends Controller
 					"Content-Type: text/plain; charset=UTF-8";
 
 				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Obrigado por reportar, entraremos em contato em breve!');
+				Yii::app()->user->setFlash('suporte','Obrigado por reportar, entraremos em contato em breve!');
 				$this->refresh();
 			}
 		}
-		$this->render('contact',array('model'=>$model));
+		$this->render('suporte',array('model'=>$model));
 	}
 
 	/**

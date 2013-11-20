@@ -11,7 +11,6 @@ class ContactForm extends CFormModel
 	public $email;
 	public $subject;
 	public $body;
-	public $verifyCode;
 
 	/**
 	 * Declares the validation rules.
@@ -23,8 +22,6 @@ class ContactForm extends CFormModel
 			array('name, email, subject, body', 'required'),
 			// email has to be a valid email address
 			array('email', 'email'),
-			// verifyCode needs to be entered correctly
-			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 		);
 	}
 
@@ -39,8 +36,7 @@ class ContactForm extends CFormModel
 			'name'=>'Nome',
 			'email'=>'Email',
 			'subject'=>'Assunto',
-			'verifyCode'=>'Captcha',
-			'body'=>'Escreva detalhademente seu problema'
+			'body'=>'Descrição'
 		);
 	}
 }

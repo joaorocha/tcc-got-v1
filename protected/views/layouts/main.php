@@ -53,11 +53,11 @@
         <div id="menu_sup">
             <nav id="nav2" class="cl-effect-21">
                 <a href="<?php echo Yii::app()->request->baseUrl; ?>">Início</a>
-                <a href="javascript:void(0)">Notícias</a>
-                <a href="javascript:void(0)">Guias</a>
-                <a href="javascript:void(0)">Fórum</a>
+                <a href="javascript:void(0)">Notícias*</a>
+                <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/guias">Guias</a>
+                <a href="javascript:void(0)">Fórum*</a>
                 <a href="<?php echo Yii::app()->request->baseUrl; ?>/usuario/create">Cadastro</a>
-                <a href="javascript:void(0)">Ranking</a>
+                <a href="javascript:void(0)">Ranking*</a>
                 <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/contact">Suporte</a>
             </nav>
         </div><!--FIM MENU SUPERIOR-->
@@ -67,9 +67,9 @@
             <div id="menu_lateral">
                 <ul class="navLat">
                     <li><h2>Principal</h2></li>
-                    <li><a href="javascript:void(0)">História</a></li>
-                    <li><a href="javascript:void(0)">Compre Créditos</a></li>
-                    <li><a href="javascript:void(0)">Sobre GoT</a></li>
+                    <li><a href="javascript:void(0)">História*</a></li>
+                    <li><a href="javascript:void(0)">Compre Créditos*</a></li>
+                    <li><a href="javascript:void(0)">Sobre GoT*</a></li>
                 </ul>
             </div><!--FIM MENU LATERAL-->
             <!--PAINEL DE CONTROLE-->
@@ -77,9 +77,9 @@
                 <ul class="painelLat">
                     <li><h2>Painel</h2></li>
                     <li><?php echo $login; ?></li>
-                    <li><a href="javascript:void(0)">Recuperar Senha</a></li>
-                    <li><a href="javascript:void(0)">Regras</a></li>
-                    <li><a href="javascript:void(0)">F.A.Q</a></li>
+                    <li><a href="javascript:void(0)">Recuperar Senha*</a></li>
+                    <li><a href="javascript:void(0)">Regras*</a></li>
+                    <li><a href="javascript:void(0)">F.A.Q*</a></li>
                 </ul>
             </div><!--FIM PAINEL DE CONTROLE-->
             <!--PUBLICIDADE-->
