@@ -8668,3 +8668,803 @@ Stack trace:
 REQUEST_URI=/got/personagem/src=%22/got/assets/web/img/background.png%22
 HTTP_REFERER=http://localhost/got/personagem/7
 ---
+2013/11/18 19:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Personagem Inexistente ou deletado!' in /var/www/got/protected/controllers/PersonagemController.php:181
+Stack trace:
+#0 /var/www/got/protected/controllers/PersonagemController.php(54): PersonagemController->loadModel('7')
+#1 [internal function]: PersonagemController->actionView('7')
+#2 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(PersonagemController), Array)
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PersonagemController), Object(ReflectionMethod), Array)
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/view')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/got/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/got/personagem/7
+---
+2013/11/18 19:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/src=...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/personagem/7
+---
+2013/11/18 19:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/src=...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/personagem/7
+---
+2013/11/18 19:04:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Personagem Inexistente ou deletado!' in /var/www/got/protected/controllers/PersonagemController.php:181
+Stack trace:
+#0 /var/www/got/protected/controllers/PersonagemController.php(54): PersonagemController->loadModel('79')
+#1 [internal function]: PersonagemController->actionView('79')
+#2 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(PersonagemController), Array)
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(PersonagemController), Object(ReflectionMethod), Array)
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/view')
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/got/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/got/personagem/79
+---
+2013/11/18 19:04:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/src=...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/personagem/79
+---
+2013/11/18 19:04:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/src=...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/personagem/79
+---
+2013/11/20 07:56:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "gii/view/index".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/view/index')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/got/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/got/gii/view/index
+---
+2013/11/20 08:16:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "missa" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('missa')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('missa')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/miss...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/missa
+---
+2013/11/20 08:16:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/src=...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/personagem/missa
+---
+2013/11/20 08:16:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/src=...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/personagem/missa
+---
+2013/11/20 08:16:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "missao" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('missao')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('missao')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/miss...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/missao
+---
+2013/11/20 08:16:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/src=...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/personagem/missao
+---
+2013/11/20 08:23:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "usario/view".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usario/view')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/got/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/got/usario/12
+---
+2013/11/20 08:23:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "usario/src="/got/assets/web/img/background.png"".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usario/src="/go...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/got/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/got/usario/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/usario/12
+---
+2013/11/20 08:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Não foi possível resolver a requisição "usario/src="/got/assets/web/img/background.png"".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usario/src="/go...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/got/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/got/usario/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/usario/12
+---
+2013/11/20 08:23:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Você não está autorizado a realizar essa operação.' in /var/www/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Voc?? n??o est?...')
+#1 /var/www/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/view')
+#9 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/got/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/got/usuario/12
+---
+2013/11/20 08:23:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/src="/g...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/usuario/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/usuario/12
+---
+2013/11/20 08:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/src="/g...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/usuario/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/usuario/12
+---
+2013/11/20 08:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "assets" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/asse...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/assets/web/img/casa/3.png
+HTTP_REFERER=http://localhost/got/personagem/12
+---
+2013/11/20 08:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "assets" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/asse...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/assets/web/img/mentor/7.jpg
+HTTP_REFERER=http://localhost/got/personagem/12
+---
+2013/11/20 08:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "assets" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/asse...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/assets/web/img/casa/3.png
+HTTP_REFERER=http://localhost/got/personagem/12
+---
+2013/11/20 08:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "assets" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('personagem/asse...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/personagem/assets/web/img/mentor/7.jpg
+HTTP_REFERER=http://localhost/got/personagem/12
+---
+2013/11/20 08:37:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Sua requisição é inválida.' in /var/www/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/delete')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/got/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/got/missao/delete
+---
+2013/11/20 08:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/src="/go...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/missao/delete
+---
+2013/11/20 08:37:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "src="" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('src="')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('src="')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/src="/go...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/missao/delete
+---
+2013/11/20 08:37:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Sua requisição é inválida.' in /var/www/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/delete')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/got/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/got/missao/delete/1
+---
+2013/11/20 08:37:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Sua requisição é inválida.' in /var/www/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/delete/s...')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/got/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/got/missao/delete/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/missao/delete/1
+---
+2013/11/20 08:37:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Sua requisição é inválida.' in /var/www/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/delete/s...')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/got/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/got/missao/delete/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/missao/delete/1
+---
+2013/11/20 08:37:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "1" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('1')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('1')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/1/delete')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/1/delete
+---
+2013/11/20 08:37:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "1" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('1')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('1')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/1/src="/...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/1/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/missao/1/delete
+---
+2013/11/20 08:37:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "1" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('1')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('1')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/1/src="/...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/1/src=%22/got/assets/web/img/background.png%22
+HTTP_REFERER=http://localhost/got/missao/1/delete
+---
+2013/11/20 08:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "1" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('1')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('1')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/1/delete')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/1/delete
+---
+2013/11/20 08:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "1" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('1')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('1')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/1/delete')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/1/delete
+---
+2013/11/20 08:39:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "1" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('1')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('1')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/1/delete')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/1/delete
+---
+2013/11/20 08:40:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "1" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('1')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('1')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/1/delete')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/1/delete
+---
+2013/11/20 08:40:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Sua requisição é inválida.' in /var/www/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/delete')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/got/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/got/missao/delete/1
+---
+2013/11/20 08:40:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Sua requisição é inválida.' in /var/www/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/delete')
+#10 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/got/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/got/missao/delete
+---
+2013/11/20 08:43:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/
+---
+2013/11/20 08:43:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/
+---
+2013/11/20 08:44:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/
+---
+2013/11/20 08:44:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/
+---
+2013/11/20 08:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+---
+2013/11/20 08:47:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/
+---
+2013/11/20 08:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/
+---
+2013/11/20 08:49:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 08:49:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 08:52:36 [error] [php] Undefined variable: variable (/var/www/got/protected/views/missao/index.php:16)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): MissaoController->renderFile()
+#1 /var/www/yii/framework/web/CController.php(782): MissaoController->renderPartial()
+#2 /var/www/got/protected/controllers/MissaoController.php(94): MissaoController->render()
+#3 /var/www/yii/framework/web/actions/CInlineAction.php(49): MissaoController->actionIndex()
+#4 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/yii/framework/web/filters/CFilterChain.php(133): MissaoController->runAction()
+#6 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MissaoController->filterAccessControl()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(265): MissaoController->runActionWithFilters()
+#12 /var/www/yii/framework/web/CWebApplication.php(282): MissaoController->run()
+#13 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/got/index.php(13): CWebApplication->run()
+REQUEST_URI=/got/missao/index
+in /var/www/got/protected/views/missao/index.php (16)
+in /var/www/got/protected/controllers/MissaoController.php (94)
+in /var/www/got/index.php (13)
+2013/11/20 08:57:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 08:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:00:44 [error] [php] include(Categories.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/got/protected/views/missao/index.php(16): spl_autoload_call()
+#1 /var/www/yii/framework/web/CBaseController.php(126): require()
+#2 /var/www/yii/framework/web/CBaseController.php(95): MissaoController->renderInternal()
+#3 /var/www/yii/framework/web/CController.php(869): MissaoController->renderFile()
+#4 /var/www/yii/framework/web/CController.php(782): MissaoController->renderPartial()
+#5 /var/www/got/protected/controllers/MissaoController.php(94): MissaoController->render()
+#6 /var/www/yii/framework/web/actions/CInlineAction.php(49): MissaoController->actionIndex()
+#7 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(133): MissaoController->runAction()
+#9 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /var/www/yii/framework/web/filters/CInlineFilter.php(58): MissaoController->filterAccessControl()
+#12 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/yii/framework/web/CController.php(265): MissaoController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): MissaoController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/got/index.php(13): CWebApplication->run()
+REQUEST_URI=/got/missao/index
+in /var/www/got/protected/views/missao/index.php (16)
+in /var/www/got/protected/controllers/MissaoController.php (94)
+in /var/www/got/index.php (13)
+2013/11/20 09:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:01:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:02:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:02:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:03:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:03:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:05:13 [error] [exception.CException] exception 'CException' with message 'A propriedade "Missao.tempo_missao" não está definida.' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('tempo_missao')
+#1 /var/www/got/protected/views/missao/index.php(22): CActiveRecord->__get('tempo_missao')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/got/pr...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/got/pr...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/got/pr...', Array, true)
+#5 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/got/protected/controllers/MissaoController.php(94): CController->render('index', Array)
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): MissaoController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#17 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/index')
+#18 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/got/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/got/missao/index
+HTTP_REFERER=http://localhost/got/missao/
+---
+2013/11/20 09:05:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:05:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:05:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:05:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:06:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---
+2013/11/20 09:06:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'O sistema não foi capaz de encontrar a ação "img" solicitada.' in /var/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('missao/img/Summ...')
+#3 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/got/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/got/missao/img/Summerhall.jpg
+HTTP_REFERER=http://localhost/got/missao/index
+---

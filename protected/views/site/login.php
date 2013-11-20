@@ -22,7 +22,7 @@ $this->pageTitle=Yii::app()->name . ': Login';?>
 			<li>Tenha certeza de que todos os dados digitados estão corretos antes de confirmar o login.</li>
 		</ol>
 	</div>
-	<div class="login-body">
+	<div id="login-body">
 		<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'login-form',
 			'enableClientValidation'=>true,

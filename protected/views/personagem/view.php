@@ -12,7 +12,8 @@
         <table>
             <tr>
                 <td class="player">
-                    <label>Player: <?php echo $model->nome_personagem; ?></label>
+                    <label>Personagem: <?php echo $model->nome_personagem; ?></label>
+                    <label>Jogador: <?php echo $model->idUsuario->nome_usuario; ?></label>
 
                     <img src="<?php echo Yii::app()->request->baseUrl.'/assets/web/img/casa/'.$model->id_casa.'b.jpg'; ?>"><br>
                 </td>
@@ -24,7 +25,7 @@
                     <p><label class="status">Level: <?php echo $model->id_level; ?></label>
                     <progress max="49" value="<?php echo $model->id_level; ?>" class="yellow"></progress></p>
                     <p><label class="status">XP: <?php echo $model->xp_personagem; ?>/<?php echo $model->idLevel->min_xp; ?></label>
-                    <progress max="<?php echo $model->idLevel->min_xp; ?>" value="<?php echo $model->xp_personagem; ?>" class="slateblue"></progress></p>
+                    <progress max="<?php echo $model->idLevel->min_xp; ?>" value="<?php echo $model->xp_personagem; ?>" class="purple"></progress></p>
                     <br>
                     <label class="status">Força: <?php echo $model->forca_personagem; ?></label>
                     <progress max="99" value="<?php echo $model->forca_personagem; ?>" class="orange"></progress>
