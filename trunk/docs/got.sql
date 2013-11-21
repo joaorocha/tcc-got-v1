@@ -1,6 +1,9 @@
 begin;
+
 --
 -- PostgreSQL database dump
+-- Dump do banco com as tabelas e os dados de Casas e Mentores
+-- TODO: Incluir dados dos itens e Missões
 --
 
 SET statement_timeout = 0;
