@@ -69,7 +69,7 @@
                     <li><h2>Principal</h2></li>
                     <li><a href="javascript:void(0)">História*</a></li>
                     <li><a href="javascript:void(0)">Compre Créditos*</a></li>
-                    <li><a href="javascript:void(0)">Sobre GoT*</a></li>
+                    <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/about">Sobre GoT</a></li>
                 </ul>
             </div><!--FIM MENU LATERAL-->
             <!--PAINEL DE CONTROLE-->

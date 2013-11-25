@@ -3,8 +3,8 @@
         <!--TIPO GUIA-->
         <div id="tipo-guia">
             <h1>Guias</h1>
-            <a href="javascript:void(0)">Intermediário*</a>
-            <a href="javascript:void(0)">Avançado*</a><br><br>
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/guias">Intermediário</a>
+            <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/guias">Avançado</a><br><br>
             <h2>Básico</h2>
         </div>
         <div id="content-guia">
