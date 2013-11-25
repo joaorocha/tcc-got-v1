@@ -1,0 +1,336 @@
+/*
+    Document   : effects
+    Created on : 19/10/2013, 22:29:19
+    Author     : Xu
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Effect 21: borders slight translate */
+.cl-effect-21 li a {
+	padding: 10px;
+	color: #237546;
+	font-weight: 700;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-21 a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+	color: #fff;
+}
+
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+/* End Effect 21: borders slight translate */
+
+/*Setas e Thumbnails SliceBox*/
+
+.sb-description h3 {
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.sb-description h3 a {
+	color: #4a3c27;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+}
+
+.nav-dots {
+	text-align: center;
+	bottom: -5px;
+	height: 30px;
+	width: 100%;
+	left: 0;
+	display: none;
+}
+
+.nav-dots span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 3px;
+	background: #cbbfae;
+	cursor: pointer;
+	box-shadow:
+		0 1px 1px rgba(255,255,255,0.6),
+		inset 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.nav-dots span.nav-dot-current {
+	box-shadow:
+		0 1px 1px rgba(255,255,255,0.6),
+		inset 0 1px 1px rgba(0,0,0,0.1),
+		inset 0 0 0 3px #cbbfae,
+		inset 0 0 0 8px #fff;
+}
+/*Fim Setas e Thumbnails SliceBox*/
+
+/*Efeitos SliceBox*/
+
+.sb-slider {
+	z-index: 1;
+	margin: 10px auto;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	list-style-type: none;
+	padding: 0;
+}
+
+.sb-slider li {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.sb-slider li > a {
+	outline: none;
+}
+
+.sb-slider li > a img {
+	border: none;
+}
+
+.sb-slider img {
+	max-width: 100%;
+	display: block;
+}
+
+.sb-description {
+	padding: 20px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	z-index: 1000;
+	position: absolute;
+	background: #CBBFAE;
+	background: rgba(190,176,155, 0.4);
+	border-left: 4px solid rgba(255,255,255,0.7);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	color: #fff;
+
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-o-transition: all 200ms;
+	-ms-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.sb-slider li.sb-current .sb-description {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity: 1;
+}
+
+.sb-slider li.sb-current .sb-description:hover {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+	filter: alpha(opacity=99);
+	background: rgba(190,176,155, 0.7);
+
+}
+
+.sb-perspective {
+	position: relative;
+}
+
+.sb-perspective > div {
+	position: absolute;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-backface-visibility : hidden;
+	-moz-backface-visibility : hidden;
+	-o-backface-visibility : hidden;
+	-ms-backface-visibility : hidden;
+	backface-visibility : hidden;
+}
+
+.sb-side {
+	margin: 0;
+	display: block;
+	position: absolute;
+
+	-moz-backface-visibility : hidden;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+/*Fim Efeitos SliceBox*/
+
+
+/*ToolTips*/
+    a.dcontexto{
+    position:relative;
+    font:12px arial, verdana, helvetica, sans-serif;
+
+    padding:0;
+    color:#039;
+    text-decoration:none;
+    z-index:24;
+    }
+
+    a.dcontexto:hover{
+    background:transparent;
+    color:#f00;
+    z-index:25;
+    }
+
+        a.dcontexto span{display: none}
+        a.dcontexto:hover span{
+        display:block;
+        position:absolute;
+        width: 230px;
+        text-align: justify;
+        top: -60px;
+        right-align:justify;
+        left:0;
+        font: 12px arial, verdana, helvetica, sans-serif;
+
+        padding:5px 10px;
+
+        border:1px solid #999;
+        background:#e0ffff;
+        color:#000;
+        }
+/*Fim ToolTips*/
+
+
+
+/*Progress Bar*/
+progress:not([value]) {
+   /* Styling here */
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+   	width: 200px !important;
+	margin-left: -15px;
+ 	height: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+    progress.yellow[value]::-webkit-progress-value {
+        background-color: yellow;
+    }
+    progress.slateblue[value]::-webkit-progress-value {
+        background-color: slateblue;
+    }
+	progress.red[value]::-webkit-progress-value {
+		background-color: red;
+	}
+	progress.green[value]::-webkit-progress-value {
+		background-color: green;
+	}
+	progress.orange[value]::-webkit-progress-value {
+		background-color: orange;
+	}
+	progress.blue[value]::-webkit-progress-value {
+		background-color: blue;
+	}
+
+/*Fim Progress Bar*/
+
+/*Progress Bar FireFox*/
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of default border in Firefox. */
+  border: none;
+
+  /* Dimensions */
+   	width: 200px !important;
+	margin-left: -15px;
+ 	height: 10px;
+}
+
+	progress.red[value]::-moz-progress-bar {
+		background-color: red;
+		border-radius: 2px;
+		background-size: 35px 20px, 100% 100%, 100% 100%;
+	}
+
+	progress.yellow[value]::-moz-progress-bar {
+		background-color: yellow;
+		border-radius: 2px;
+		background-size: 35px 20px, 100% 100%, 100% 100%;
+	}
+
+	progress.green[value]::-moz-progress-bar {
+		background-color: green;
+		border-radius: 2px;
+		background-size: 35px 20px, 100% 100%, 100% 100%;
+	}
+
+	progress.blue[value]::-moz-progress-bar {
+		background-color: blue;
+		border-radius: 2px;
+		background-size: 35px 20px, 100% 100%, 100% 100%;
+	}
+
+	progress.orange[value]::-moz-progress-bar {
+		background-color: orange;
+		border-radius: 2px;
+		background-size: 35px 20px, 100% 100%, 100% 100%;
+	}
+/*Progress Bar FireFox*/
