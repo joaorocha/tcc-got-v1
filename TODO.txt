@@ -1,3 +1,12 @@
+Referencial-teorico = tecnologias
+referencias = bibliografia
+dividir topicos em diferentes slides
+tirar os riscos do slide de problemas
+implementações futuras nas considerações finais (colocar só 3)
+
+
+
+
 Fazer - abstract
 Arrumar citações para caixa alta no autor
 (SURNAME, p. xx, 2000)
