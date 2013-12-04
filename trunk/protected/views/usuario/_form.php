@@ -43,10 +43,10 @@
 			<?php echo $form->error($model,'passwd_usuario'); ?>
 			<br><br>
 
-			<input type="checkbox"> Li e concordo com as <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/regras">regras</a>
+			<input type="checkbox" id="lido"> Li e concordo com as <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/regras">regras</a>
 			<br><br>
 
-			<?php echo CHtml::submitButton('Cadastrar'); ?>
+			<div id="go">Você precisa concordar com os termos para continuar</div>
 		<?php $this->endWidget(); ?>
 	</div>
 	<div id="cadastro-image">
