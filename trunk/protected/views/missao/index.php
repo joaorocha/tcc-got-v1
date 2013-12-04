@@ -15,7 +15,7 @@
                 <p>Nome: <?php echo $missao->nome_missao ?></p>
                 <p>Descrição: <?php echo $missao->descricao_missao ?></p>
                 <label>Tempo de execução: <?php echo gmdate("H\h \e i\m", $missao->duracao_missao) ?></label>
-                <label id="btn"><a href="javascript:void(0)"><button>Realizar missão*</button></a></label>
+                <label id="btn"><a href="<?php echo Yii::app()->request->baseUrl.'/mlssao' ?>"><button>Realizar missão*</button></a></label>
             </div>
         <?php endforeach ?>
     </div>

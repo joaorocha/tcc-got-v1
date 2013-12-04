@@ -77,6 +77,8 @@
                 <ul class="painelLat">
                     <li><h2>Painel</h2></li>
                     <li><?php echo $login; ?></li>
+                    <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/missao">Missões</a></li>
+                    <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/mercad0">Mercado</a></li>
                     <li><a href="javascript:void(0)">Recuperar Senha*</a></li>
                     <li><a href="javascript:void(0)">Regras*</a></li>
                     <li><a href="javascript:void(0)">F.A.Q*</a></li>
