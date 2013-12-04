@@ -79,6 +79,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+
 		$model=new LoginForm;
 
 		// if it is ajax validation request
@@ -91,12 +92,21 @@ class SiteController extends Controller
 		// collect user input data
 		if(isset($_POST['LoginForm']))
 		{
+
+			$user = "got";
+			$pass = "got";
+			$dbcon = new PDO("pgsql:host='localhost';dbname='got'", $user, $pass);
+			$id_usuario = Yii::app()->user->id;
+			$tempersonagem = $dbcon->exec("SELECT id_usuario from personagem where id_usuario = $id_usuario");
+			$dbcon = null;
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login()) {
 				$_url_login = Yii::app()->user->returnUrl;
-				if (true) // verificar se jah tem personagem
+				if (!$tempersonagem) {
+					exec("echo $tempersonagem > lol");
 					$_url_login = Yii::app()->request->baseUrl.'/personagem/create';
+				}
 				$this->redirect($_url_login);
 			}
 		}

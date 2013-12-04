@@ -1,69 +1,28 @@
-Referencial-teorico = tecnologias
-referencias = bibliografia
-dividir topicos em diferentes slides
-tirar os riscos do slide de problemas
-implementações futuras nas considerações finais (colocar só 3)
+PEDRO
+
+
+Vantagens do mentor
+Missão tah abrindo mesmo quando ele está em uma missão
+Mercado tah zuado
+Facebook/twitter não abriram no mercado (olhar em todas so pra garantir)
+li e concordo com os termos
+
+
+
+se der
+
+tool tips
+ranking
 
 
 
 
-Fazer - abstract
-Arrumar citações para caixa alta no autor
-(SURNAME, p. xx, 2000)
-Imagens - Legenda em cima com numero da figura e descrição
+JOÃO
 
 
 
-linha 98 SiteController
-linha 4 personagem/create.php
-
-
-
-
-
-add <META http-equiv=refresh content="10; url=http://site"> to redirect on 10 seconds
-
-
-
-
-
-
-
--- Corrigir modelo do banco
-()
--- Corrigir diagrama de classes
-()
--- Sincronizar diagrama de classes com modelo do banco
-()
--- Migrar modelo para o psql
-()
--- Atualizar o dicionario de dados
-()
--- Criar tabela inventario (chaves id_inventario, id_pers, id_item)
-
-
-
-
-
-
-___________________________________________________
-Sequencia:
-add coluna de banco
-
-
-Modelo: Criar tipos de noticia
-
-dicionario: MUITO mais detalhes,
-Ligação com => Coluna referencia com a tabela tal,
-Nome de tabela maiusculo e no singular,
-Incluir 'FK' em todas as chaves estrangeiras,
-
-
-Artigo: Explicar sobre o jogo depois de explicar a historia, falar sobre o mercado, os diferenciais, as vantagens ao usuário
-criar uma "gancho" no fim do artigo que coloca as implementações futuras.
-
-Falar dos diferenciais do jogo no desenvolvimento
-
-'''Aplicações web:http://www.rnp.br/newsgen/9710/n5-3.html
-PHP: PHP Programando com orientação objetos
-Pablo Dall'Oglio editora Novatec'''
+css do joao
+line 574 vai pra #FFF
+line 579 vai pra 000
+arrumar css do xp da tela de personagem
+arrumar slides (problema)

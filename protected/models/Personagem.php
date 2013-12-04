@@ -53,6 +53,7 @@ class Personagem extends CActiveRecord
 
 	public function beforeSave(){
 	    $this->id_usuario = Yii::app()->user->id;
+
 	    return parent::beforeSave();
 	}
 
