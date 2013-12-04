@@ -1,11 +1,6 @@
-PEDRO
-
-
-Vantagens do mentor
-Missão tah abrindo mesmo quando ele está em uma missão
+Se tiver missao em andamento, ele consegue começar outra e perde o avanço da anterior
 Mercado tah zuado
-Facebook/twitter não abriram no mercado (olhar em todas so pra garantir)
-li e concordo com os termos
+Noticias
 
 
 
@@ -13,16 +8,3 @@ se der
 
 tool tips
 ranking
-
-
-
-
-JOÃO
-
-
-
-css do joao
-line 574 vai pra #FFF
-line 579 vai pra 000
-arrumar css do xp da tela de personagem
-arrumar slides (problema)

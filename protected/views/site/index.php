@@ -49,7 +49,7 @@ $this->pageTitle=Yii::app()->name;
             <a href="javascript:void(0)"><h3>Notícia 1*</h3></a>
         </div>
         <div class="noti-body">
-            <p>Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações...</p>
+            <p>Informações otícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações...</p>
         </div>
         <div class="noti-read">
             <span><a href="javascript:void(0)">Read more...*</a></span>
