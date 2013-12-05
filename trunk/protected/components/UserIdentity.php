@@ -34,8 +34,8 @@ class UserIdentity extends CUserIdentity
 		} else { // Okay!
    			 $this->errorCode=self::ERROR_NONE;
    			 $this->_id = $user->id_usuario;
-   			 $this->setState('login', $user->login_usuario);
-   			 // gets login by calling Yii::app()->user->login
+   			 $this->setState('id_personagem', $user->id_personagem);
+   			 // gets login by calling Yii::app()->user->id_personagem
 		}
 		return !$this->errorCode;
 	}

@@ -49,7 +49,7 @@ $this->pageTitle=Yii::app()->name;
             <a href="javascript:void(0)"><h3>Notícia 1*</h3></a>
         </div>
         <div class="noti-body">
-            <p>Informações otícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações...</p>
+            <p>Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações...</p>
         </div>
         <div class="noti-read">
             <span><a href="javascript:void(0)">Read more...*</a></span>
@@ -58,7 +58,7 @@ $this->pageTitle=Yii::app()->name;
     <div class="campo_noti">
         <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/image_1.jpg" width="150" height="100">
         <div class="noti-header">
-            <a href="javascript:void(0)"><h3>Notícia 1*</h3></a>
+            <a href="javascript:void(0)"><h3>Notícia 2*</h3></a>
         </div>
         <div class="noti-body">
             <p>Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações...</p>
@@ -70,19 +70,7 @@ $this->pageTitle=Yii::app()->name;
     <div class="campo_noti">
         <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/image_1.jpg" width="150" height="100">
         <div class="noti-header">
-            <a href="javascript:void(0)"><h3>Notícia 1*</h3></a>
-        </div>
-        <div class="noti-body">
-            <p>Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações...</p>
-        </div>
-        <div class="noti-read">
-            <span><a href="javascript:void(0)">Read more...*</a></span>
-        </div>
-    </div>
-    <div class="campo_noti">
-        <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/image_1.jpg" width="150" height="100">
-        <div class="noti-header">
-            <a href="javascript:void(0)"><h3>Notícia 1*</h3></a>
+            <a href="javascript:void(0)"><h3>Notícia 3*</h3></a>
         </div>
         <div class="noti-body">
             <p>Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações notícia 1Informações...</p>

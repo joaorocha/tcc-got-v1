@@ -1,9 +1,10 @@
 <?php /* @var $this Controller */
     include_once "navbar.php";
+
     if (Yii::app()->user->isGuest) {
-        $login = '<a href="'.Yii::app()->request->baseUrl.'/site/login">Login</a>';
+        include_once "guest.php";
     } else {
-        $login = '<a href="'.Yii::app()->request->baseUrl.'/site/logout">Sair</a>';
+        include_once "logado.php";
     }?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -48,15 +49,13 @@
     </div><!--FIM BANNER-->
     <!--TUDO-->
     <div id="tudo">
-
         <!--MENU SUPERIOR-->
         <div id="menu_sup">
             <nav id="nav2" class="cl-effect-21">
                 <a href="<?php echo Yii::app()->request->baseUrl; ?>">Início</a>
-                <a href="javascript:void(0)">Notícias*</a>
+                <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/news">Notícias</a>
                 <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/guias">Guias</a>
                 <a href="javascript:void(0)">Fórum*</a>
-                <a href="<?php echo Yii::app()->request->baseUrl; ?>/usuario/create">Cadastro</a>
                 <a href="javascript:void(0)">Ranking*</a>
                 <a href="<?php echo Yii::app()->request->baseUrl; ?>/site/contact">Suporte</a>
             </nav>
@@ -72,18 +71,7 @@
                     <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page/view/about">Sobre GoT</a></li>
                 </ul>
             </div><!--FIM MENU LATERAL-->
-            <!--PAINEL DE CONTROLE-->
-            <div id="painel">
-                <ul class="painelLat">
-                    <li><h2>Painel</h2></li>
-                    <li><?php echo $login; ?></li>
-                    <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/missao">Missões</a></li>
-                    <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/mercad0">Mercado</a></li>
-                    <li><a href="javascript:void(0)">Recuperar Senha*</a></li>
-                    <li><a href="javascript:void(0)">Regras*</a></li>
-                    <li><a href="javascript:void(0)">F.A.Q*</a></li>
-                </ul>
-            </div><!--FIM PAINEL DE CONTROLE-->
+            <?php echo $controle; ?>
             <!--PUBLICIDADE-->
             <div id="publicidade">
                 <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/background.png" width="150" height="500">

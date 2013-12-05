@@ -26,6 +26,9 @@ body {
     background-repeat: no-repeat;
 }
 
+.errorMessage {
+    color: #D64937 !important;
+}
 
 #banner {
     margin: 0 auto;
@@ -524,7 +527,7 @@ ul.painelLat {
 label {
     float: left;
     margin: 0px;
-    padding: 0px 1px;
+    padding: 0px 2px;
 }
 
 #cadastro-body {
