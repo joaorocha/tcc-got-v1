@@ -93,20 +93,10 @@ class SiteController extends Controller
 		if(isset($_POST['LoginForm']))
 		{
 
-			$user = "got";
-			$pass = "got";
-			$dbcon = new PDO("pgsql:host='localhost';dbname='got'", $user, $pass);
-			$id_usuario = Yii::app()->user->id;
-			$tempersonagem = $dbcon->exec("SELECT id_usuario from personagem where id_usuario = $id_usuario");
-			$dbcon = null;
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login()) {
-				$_url_login = Yii::app()->user->returnUrl;
-				if (!$tempersonagem) {
-					exec("echo $tempersonagem > lol");
-					$_url_login = Yii::app()->request->baseUrl.'/personagem/create';
-				}
+				$_url_login = Yii::app()->request->baseUrl.'/personagem/'.Yii::app()->user->id_personagem;
 				$this->redirect($_url_login);
 			}
 		}

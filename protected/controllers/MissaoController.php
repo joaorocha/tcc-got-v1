@@ -51,7 +51,9 @@ class MissaoController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->redirect(array('index'));
+		$this->render('view',array(
+			'model'=>$this->loadModel($id),
+		));
 	}
 
 	/**
@@ -60,7 +62,21 @@ class MissaoController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$this->redirect(array('index'));
+		$model=new Missao;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Missao']))
+		{
+			$model->attributes=$_POST['Missao'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id_missao));
+		}
+
+		$this->render('create',array(
+			'model'=>$model,
+		));
 	}
 
 	/**
@@ -70,7 +86,21 @@ class MissaoController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$this->redirect(array('index'));
+		$model=$this->loadModel($id);
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Missao']))
+		{
+			$model->attributes=$_POST['Missao'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id_missao));
+		}
+
+		$this->render('update',array(
+			'model'=>$model,
+		));
 	}
 
 	/**
@@ -80,7 +110,11 @@ class MissaoController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->redirect(array('index'));
+		$this->loadModel($id)->delete();
+
+		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+		if(!isset($_GET['ajax']))
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
 	/**

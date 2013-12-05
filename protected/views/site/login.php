@@ -11,6 +11,14 @@ $this->pageTitle=Yii::app()->name . ': Login';?>
 <div id="login">
 	<div id="login-header">
 		<h1>Login</h1>
+		<?php $form=$this->beginWidget('CActiveForm', array(
+			'id'=>'login-form',
+			'enableClientValidation'=>false,
+			'clientOptions'=>array('validateOnSubmit'=>true)
+		)); ?>
+			<?php echo $form->error($model,'username'); ?>
+			<?php echo $form->error($model,'password'); ?>
+			<br>
 		<p>Para a realização do login siga os seguintes passos:</p>
 		<ol start="1">
 			<li>Realize o cadastro em nosso site <a href="<?php echo Yii::app()->request->baseUrl; ?>/usuario/create">clicando aqui</a>.</li>
@@ -23,20 +31,13 @@ $this->pageTitle=Yii::app()->name . ': Login';?>
 		</ol>
 	</div>
 	<div id="login-body">
-		<?php $form=$this->beginWidget('CActiveForm', array(
-			'id'=>'login-form',
-			'enableClientValidation'=>false,
-			'clientOptions'=>array('validateOnSubmit'=>true)
-		)); ?>
 
 			<label>Login:</label><br>
 			<?php echo $form->textField($model,'username'); ?>
-			<?php echo $form->error($model,'username'); ?>
 			<br><br>
 
 			<label>Senha:</label><br>
 			<?php echo $form->passwordField($model,'password'); ?>
-			<?php echo $form->error($model,'password'); ?>
 			<br><br>
 
 			<?php echo CHtml::submitButton('Logar'); ?><br>

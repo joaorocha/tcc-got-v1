@@ -31,11 +31,11 @@ class PersonagemController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','view'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','index','view'),
+				'actions'=>array('admin','delete','index'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -153,7 +153,7 @@ class PersonagemController extends Controller
 	{
 		$model=Personagem::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'Personagem Inexistente ou deletado!');
+			$this->redirect(array('create'));
 		return $model;
 	}
 

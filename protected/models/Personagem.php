@@ -44,7 +44,7 @@ class Personagem extends CActiveRecord
 		return array(
 			array('nome_personagem', 'required'),
 			array('gold_personagem, xp_personagem, id_level, id_mentor, id_usuario, forca_personagem, inteligencia_personagem, vitalidade_personagem, agilidade_personagem, defesa_personagem, id_casa', 'numerical', 'integerOnly'=>true),
-			array('nome_personagem', 'length', 'max'=>45),
+			array('nome_personagem', 'unique', 'message'=>'Já existe um personagem com esse nome!'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_personagem, nome_personagem, gold_personagem, xp_personagem, id_level, id_mentor, id_usuario, forca_personagem, inteligencia_personagem, vitalidade_personagem, agilidade_personagem, defesa_personagem, id_casa', 'safe', 'on'=>'search'),
@@ -52,7 +52,13 @@ class Personagem extends CActiveRecord
 	}
 
 	public function beforeSave(){
-	    $this->id_usuario = Yii::app()->user->id;
+		$id = Yii::app()->user->id;
+		$dbcon = new PDO("pgsql:host=localhost;dbname=got", 'got', 'got');
+		$sql = "UPDATE usuario SET id_personagem=? WHERE id_usuario=?";
+		$q = $dbcon->prepare($sql);
+		$q->execute(array($this->id_personagem,$id));
+
+	    $this->id_usuario = $id;
 
 	    return parent::beforeSave();
 	}
