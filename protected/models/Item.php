@@ -77,6 +77,20 @@ class Item extends CActiveRecord
 		);
 	}
 
+	public function compraItem()
+	{
+		$usuario = Yii::app()->user->id;
+		$item = $this->id_item;
+		$gold = $this->preco_item;
+
+		$sql->update('personagem', array(
+    		'id_item'=>$item,
+    		'gold_personagem'=>'gold_personagem - '.$gold
+		), 'id_personagem=:id', array(':id'=>$usuario));
+		return $sql
+	}
+
+
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 *

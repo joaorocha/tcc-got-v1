@@ -104,6 +104,19 @@ class Missao extends CActiveRecord
 		));
 	}
 
+	public function iniciaMissao()
+	{
+		$usuario = Yii::app()->user->id;
+		$xp = $this->max_xp_missao;
+		$gold = $this->max_gold_missao;
+
+		$sql->update('personagem', array(
+    		'xp_personagem'=>$xp,
+    		'gold_personagem'=>$gold
+		), 'id_personagem=:id', array(':id'=>$usuario));
+		return $sql
+	}
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
