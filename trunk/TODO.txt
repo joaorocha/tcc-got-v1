@@ -1,10 +1,3 @@
 Se tiver missao em andamento, ele consegue começar outra e perde o avanço da anterior
-Mercado tah zuado
-Noticias
-
-
-
-se der
-
-tool tips
+Informar as vantagens do mentor nas tooltips
 ranking

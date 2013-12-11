@@ -26,16 +26,9 @@ $this->pageTitle=Yii::app()->name;
                     <h3>Noticia 3*</h3>
                 </div>
             </li>
-            <li>
-                <a href="javascript:void(0)"><img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/image_4.jpg" width="550" height="368"/></a>
-                <div class="sb-description">
-                    <h3>Noticia 4*</h3>
-                </div>
-            </li>
         </ul>
         <div id="nav-dots" class="nav-dots">
             <span class="nav-dot-current"></span>
-            <span></span>
             <span></span>
             <span></span>
         </div>
@@ -56,7 +49,7 @@ $this->pageTitle=Yii::app()->name;
         </div>
     </div>
     <div class="campo_noti">
-        <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/image_1.jpg" width="150" height="100">
+        <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/image_2.jpg" width="150" height="100">
         <div class="noti-header">
             <a href="javascript:void(0)"><h3>Notícia 2*</h3></a>
         </div>
@@ -68,7 +61,7 @@ $this->pageTitle=Yii::app()->name;
         </div>
     </div>
     <div class="campo_noti">
-        <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/image_1.jpg" width="150" height="100">
+        <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/web/img/image_3.jpg" width="150" height="100">
         <div class="noti-header">
             <a href="javascript:void(0)"><h3>Notícia 3*</h3></a>
         </div>
@@ -78,5 +71,6 @@ $this->pageTitle=Yii::app()->name;
         <div class="noti-read">
             <span><a href="javascript:void(0)">Read more...*</a></span>
         </div>
+    <br><br><br><br><br><br><br><br>
     </div><!--FIM CAMPO DE NOTÍCIAS-->
 </div><!--FIM CENTRO-->

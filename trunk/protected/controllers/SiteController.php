@@ -96,7 +96,7 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login()) {
-				$_url_login = Yii::app()->request->baseUrl.'/personagem/'.Yii::app()->user->id_personagem;
+				$_url_login = Yii::app()->request->baseUrl.'/personagem/'.Yii::app()->user->id;
 				$this->redirect($_url_login);
 			}
 		}

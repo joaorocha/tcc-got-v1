@@ -2,7 +2,7 @@
 /* @var $this MissaoController */
 /* @var $dataProvider CActiveDataProvider */
 $agora = new DateTime();
-$fim_missao = new DateTime('15:10:00');
+$fim_missao = new DateTime('16:40:00');
 $faltam = $fim_missao->diff($agora);
 $timeleft = $faltam->format("%h:%i:%s");
 $emmissao = ($agora < $fim_missao) ? true : false ;
@@ -17,7 +17,7 @@ $emmissao = ($agora < $fim_missao) ? true : false ;
         <?php if ($emmissao){ ?>
             <div class="missao-content">
                 <img src="<?php echo Yii::app()->request->baseUrl.'/assets/web/img/Summerhall.jpg' ?>" width="100" height="100">
-                <label>Missão em andamento! Volte em <?php echo $timeleft ?></label>
+                <label>Missão em andamento!</label>
                 <label id="btn"><a href="<?php echo Yii::app()->request->baseUrl.'/missao' ?>"><button>Atualizar</button></a></label>
             </div>
         <?php }else{ ?>
@@ -26,8 +26,8 @@ $emmissao = ($agora < $fim_missao) ? true : false ;
                 <img src="<?php echo Yii::app()->request->baseUrl.'/assets/web/img/Summerhall.jpg' ?>" width="100" height="100">
                 <p>Nome: <?php echo $missao->nome_missao ?></p>
                 <p>Descrição: <?php echo $missao->descricao_missao ?></p>
-                <p>Recompensa em gold: Entre <?php echo $missao->min_gold_missao.' e '. $missao->max_gold_missao?></p>
-                <p>Recompensa em XP: Entre <?php echo $missao->min_xp_missao.' e '. $missao->max_xp_missao?></p>
+                <p>Recompensa em gold: 80</p>
+                <p>Recompensa em XP: 4</p>
                 <label>Tempo de execução: <?php echo gmdate("H:i:s", $missao->duracao_missao) ?></label>
                 <label id="btn"><a href="<?php echo Yii::app()->request->baseUrl.'/missao/'.$missao->id_missao ?>"><button>Realizar missão</button></a></label>
             </div>
