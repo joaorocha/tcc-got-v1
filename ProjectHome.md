@@ -1,0 +1,1 @@
+Trabalho desenvolvido para meios acadêmicos, com implementações futuras.
